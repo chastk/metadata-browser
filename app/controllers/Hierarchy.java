@@ -16,7 +16,7 @@ import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.formdata.FacetFormData;
-import views.html.spatial_faceting;
+import views.html.hierarchy_faceting;
 
 
 public class Hierarchy extends Controller {
@@ -81,7 +81,8 @@ public class Hierarchy extends Controller {
         //System.out.println();
         
     // TODO: fix this (probably in a scala.html file for handling SPARQL results)
-        return ok(spatial_faceting.render(formData, field_facets, query_facets,
+        System.out.println("hierarchy postIndex() was called!");
+        return ok(hierarchy_faceting.render(formData, field_facets, query_facets,
                     range_facets, pivot_facets, cluster_facets, 
                     formData.get().subject, formData.get().predicate, query_results_list, "All Documents"));
         
@@ -138,8 +139,8 @@ public class Hierarchy extends Controller {
         //return ok("cool");
         // TODO: fix this, too
         Form<FacetFormData> fd = Form.form(FacetFormData.class).fill(facet_form);
-        //return ok();
-        return ok(spatial_faceting.render(fd, field_facets, query_facets,
+        System.out.println("hierarchy postIndex() was called!");
+        return ok(hierarchy_faceting.render(fd, field_facets, query_facets,
                 range_facets, pivot_facets, cluster_facets, 
                 subject, predicate, query_results_list, final_query));
     }// /postIndex()

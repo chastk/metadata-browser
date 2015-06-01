@@ -1,6 +1,6 @@
-// @SOURCE:/home/oneironym/jp/hierarchy-faceting/conf/routes
+// @SOURCE:/home/oneironym/jp/metadata-browser/conf/routes
 // @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Sun May 31 21:38:37 EDT 2015
+// @DATE:Mon Jun 01 16:35:30 EDT 2015
 
 
 import play.core._

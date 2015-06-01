@@ -29,8 +29,8 @@ object hierarchy_faceting extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Ap
     rangeFacets: models.FacetsWithCategories,
     pivotFacets: models.FacetsWithCategories,
     clusterFacets: models.FacetsWithCategories,
-    namedLocation: String,
-    spatialPredicates: String, 
+    thingType: String,
+    predicate: String, 
     documentMap : Map[String, models.SparqlQueryResults],
     final_query : String):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {import helper._
@@ -45,7 +45,7 @@ Seq[Any](format.raw/*10.26*/("""
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           """),_display_(/*20.12*/form(routes.Hierarchy.postIndex())/*20.46*/ {_display_(Seq[Any](format.raw/*20.48*/("""
-            """),_display_(/*21.14*/spatial_fieldset(facetForm, fieldFacets, queryFacets, rangeFacets, pivotFacets, clusterFacets, namedLocation, spatialPredicates)),format.raw/*21.142*/("""
+            """),_display_(/*21.14*/hierarchy_fieldset(facetForm, fieldFacets, queryFacets, rangeFacets, pivotFacets, clusterFacets, thingType, predicate)),format.raw/*21.132*/("""
         """)))}),format.raw/*22.10*/("""
         """),format.raw/*23.9*/("""</div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -75,19 +75,19 @@ Seq[Any](format.raw/*10.26*/("""
 """))}
   }
 
-  def render(facetForm:Form[views.formdata.FacetFormData],fieldFacets:models.FacetsWithCategories,queryFacets:models.FacetsWithCategories,rangeFacets:models.FacetsWithCategories,pivotFacets:models.FacetsWithCategories,clusterFacets:models.FacetsWithCategories,namedLocation:String,spatialPredicates:String,documentMap:Map[String, models.SparqlQueryResults],final_query:String): play.twirl.api.HtmlFormat.Appendable = apply(facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,namedLocation,spatialPredicates,documentMap,final_query)
+  def render(facetForm:Form[views.formdata.FacetFormData],fieldFacets:models.FacetsWithCategories,queryFacets:models.FacetsWithCategories,rangeFacets:models.FacetsWithCategories,pivotFacets:models.FacetsWithCategories,clusterFacets:models.FacetsWithCategories,thingType:String,predicate:String,documentMap:Map[String, models.SparqlQueryResults],final_query:String): play.twirl.api.HtmlFormat.Appendable = apply(facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,thingType,predicate,documentMap,final_query)
 
-  def f:((Form[views.formdata.FacetFormData],models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,String,String,Map[String, models.SparqlQueryResults],String) => play.twirl.api.HtmlFormat.Appendable) = (facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,namedLocation,spatialPredicates,documentMap,final_query) => apply(facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,namedLocation,spatialPredicates,documentMap,final_query)
+  def f:((Form[views.formdata.FacetFormData],models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,models.FacetsWithCategories,String,String,Map[String, models.SparqlQueryResults],String) => play.twirl.api.HtmlFormat.Appendable) = (facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,thingType,predicate,documentMap,final_query) => apply(facetForm,fieldFacets,queryFacets,rangeFacets,pivotFacets,clusterFacets,thingType,predicate,documentMap,final_query)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Sun May 31 21:38:36 EDT 2015
-                  SOURCE: /home/oneironym/jp/hierarchy-faceting/app/views/hierarchy_faceting.scala.html
-                  HASH: 0fb559776dadb2ce94d3666d6a180d118f4cf2ea
-                  MATRIX: 965->1|1493->425|1523->445|1551->447|1592->479|1632->481|1664->486|1811->606|1854->640|1894->642|1935->656|2085->784|2126->794|2162->803|2339->953|2371->964|2481->1048|2544->1095|2584->1097|2618->1104|2678->1137|2709->1147|2739->1150|2770->1160|2817->1177|2849->1182|2979->1285|3042->1332|3082->1334|3137->1361|3174->1371|3205->1381|3275->1424|3316->1444|3358->1458|3421->1490|3460->1501|3538->1549
+                  DATE: Mon Jun 01 18:00:44 EDT 2015
+                  SOURCE: /home/oneironym/jp/metadata-browser/app/views/hierarchy_faceting.scala.html
+                  HASH: eb909719be8be99f53984072ea361aa6cde9e9d3
+                  MATRIX: 965->1|1481->413|1511->433|1539->435|1580->467|1620->469|1652->474|1799->594|1842->628|1882->630|1923->644|2063->762|2104->772|2140->781|2317->931|2349->942|2459->1026|2522->1073|2562->1075|2596->1082|2656->1115|2687->1125|2717->1128|2748->1138|2795->1155|2827->1160|2957->1263|3020->1310|3060->1312|3115->1339|3152->1349|3183->1359|3253->1402|3294->1422|3336->1436|3399->1468|3438->1479|3516->1527
                   LINES: 26->1|38->10|41->14|42->15|42->15|42->15|43->16|47->20|47->20|47->20|48->21|48->21|49->22|50->23|53->26|53->26|56->29|56->29|56->29|57->30|57->30|57->30|57->30|57->30|58->31|59->32|62->35|62->35|62->35|64->37|64->37|64->37|65->38|65->38|66->39|68->41|69->42|74->47
                   -- GENERATED --
               */

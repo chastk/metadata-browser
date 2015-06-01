@@ -74,10 +74,11 @@ public class GetSolrQuery {
     	for (String collection : collection_urls.keySet()){
     		this.solr_query = new StringBuffer();
     		this.solr_query.append(collection_urls.get(collection));
-            this.solr_query.append("?q= SELECT * WHERE { ?s ?p ?o }");
+    		String q = "SELECT * WHERE { ?s ?p ?o }";
             
             String quote = new String();
     		try {
+    		    this.solr_query.append(URLEncoder.encode(q, "UTF-8"));
     			quote = URLEncoder.encode("\"", "UTF-8");
     		} catch (UnsupportedEncodingException e) {
     			e.printStackTrace();
@@ -98,7 +99,7 @@ public class GetSolrQuery {
     }// /getSolrQuery for SPARQL
     
     public void addSparqlUrls(){
-        collection_urls.put("sparql", "http://jeffersontest.tw.rpi.edu/sol4r/store/sparql?");
+        collection_urls.put("sparql", "http://jeffersontest.tw.rpi.edu/sol4r/store/sparql?q=");
     }
     
     //Preconditions: None
