@@ -18,7 +18,7 @@ public class SparqlQuery extends Query {
 
     public SparqlQuery() {}
 
-    public SparqlQuery(String subject, String predicate,
+    public SparqlQuery(String subject, String predicate, 
                          FacetsWithCategories field_facets, FacetsWithCategories query_facets, FacetsWithCategories pivot_facets, FacetsWithCategories range_facets,
                          FacetsWithCategories cluster_facets){
         this.subject = subject;
@@ -57,7 +57,7 @@ public class SparqlQuery extends Query {
 
 
     public static SparqlQuery makeInstance(FacetFormData formData) {
-        SparqlQuery query = new SparqlQuery(formData.subject, formData.predicate,
+        SparqlQuery query = new SparqlQuery(formData.subject, formData.predicate, 
                                 formData.field_facets, formData.query_facets, formData.pivot_facets,
                                 formData.range_facets, formData.cluster_facets);
         return query;

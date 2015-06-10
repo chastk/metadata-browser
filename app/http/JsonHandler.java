@@ -68,6 +68,6 @@ public class JsonHandler {
         //return categories_facets_and_counts;
         return true;
         //return field_category;
-    }
+    }// getFieldCount()
 
 }

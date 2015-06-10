@@ -11,7 +11,7 @@ import java.util.TreeMap;
 
 
 import models.Query;
-import models.SparqlQuery;
+import models.SpatialQuery;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
@@ -65,42 +65,7 @@ public class GetSolrQuery {
     	}
         //System.out.println("Final Solr Query");
         //System.out.println(this.solr_query.toString());
-    }// /getSolrQuery
-    
-    // for SPARQL queries! Lucene/NoSQL should be calling the method above
-    public GetSolrQuery (SparqlQuery query) {
-    	addSparqlUrls();
-    	
-    	for (String collection : collection_urls.keySet()){
-    		this.solr_query = new StringBuffer();
-    		this.solr_query.append(collection_urls.get(collection));
-    		String q = "SELECT * WHERE { ?s ?p ?o }";
-            
-            String quote = new String();
-    		try {
-    		    this.solr_query.append(URLEncoder.encode(q, "UTF-8"));
-    			quote = URLEncoder.encode("\"", "UTF-8");
-    		} catch (UnsupportedEncodingException e) {
-    			e.printStackTrace();
-    		}
-            
-            
-            for (String field_facet_category : query.field_facets.facets.keySet()){
-                for (String field_facet : query.field_facets.facets.get(field_facet_category).keySet()){
-                    this.solr_query.append(String.format("&fq=%s:%s%s%s", field_facet_category.replace(" ", "%20"), quote,
-                    		field_facet.replace(" ", "%20"), quote));
-                }
-            }
-            
-            this.list_of_queries.put(collection, this.solr_query);
-    	}
-        System.out.println("Final SPARQL Query");
-        System.out.println(this.solr_query.toString());
-    }// /getSolrQuery for SPARQL
-    
-    public void addSparqlUrls(){
-        collection_urls.put("sparql", "http://jeffersontest.tw.rpi.edu/sol4r/store/sparql?q=");
-    }
+    }// /getSolrQuery for NoSQL
     
     //Preconditions: None
     //Inputs: None
@@ -119,16 +84,7 @@ public class GetSolrQuery {
     	String lidarsonar = String.format("http://%s:%s@jeffersontest.tw.rpi.edu/solr/lidarsonar/select?wt=json", 
     			                           play.mvc.Controller.session("username"), play.mvc.Controller.session("password"));
     	collection_urls.put("lidarsonar", lidarsonar);
-    	/*
-    	collection_urls.put("collection1", "http://localhost:8983/solr/collection1/select?wt=json");
-    	collection_urls.put("collection2", "http://localhost:8983/solr/collection2/select?wt=json");
-    	collection_urls.put("datasets", "http://localhost:8983/solr/datasets/select?wt=json");
-    	collection_urls.put("metadata", "http://localhost:8983/solr/metadata/select?wt=json");
-    	collection_urls.put("wikimapia", "http://localhost:8983/solr/wikimapia/select?wt=json");
-    	String lidarsonar = String.format("http://%s:%s@localhost:8983/solr/lidarsonar/select?wt=json", 
-    			                           play.mvc.Controller.session("username"), play.mvc.Controller.session("password"));
-    	collection_urls.put("lidarsonar", lidarsonar);*/
-    }
+    }// /addCollectionUrls()
     
     //Preconditions: The GetSolrQuery object has been initialized by a Query object
     //Inputs: The named location and the predicate associated with it.
@@ -209,7 +165,7 @@ public class GetSolrQuery {
     	//System.out.println("The spatial query:");
     	//System.out.println(this.solr_query.toString());
     	return this;
-    }
+    }// /addSpatialComponent()
     
     //Preconditions: The GetSolrQuery object has been initialized by a Query object
     //Inputs: None. Executes query based on the member string solr_query.
@@ -226,7 +182,7 @@ public class GetSolrQuery {
         	HttpClient client = new DefaultHttpClient();
         	HttpGet request = new HttpGet(this.list_of_queries.get(collection).toString().replace(" ", "%20"));
         	HttpResponse response = client.execute(request);
-  
+            System.out.println(response);
             StringWriter writer = new StringWriter();
             IOUtils.copy(response.getEntity().getContent(), writer, "utf-8");
                         
@@ -237,5 +193,5 @@ public class GetSolrQuery {
             //in.close();
             //request.close();
         }
-    }
+    }// /executeQuery()
 }

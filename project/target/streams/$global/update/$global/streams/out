@@ -2802,25 +2802,122 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-plugin;2.3.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-plugin;2.3.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-fork-run-plugin;2.3.8[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-fork-run-plugin;2.3.8 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-plugin;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-plugin;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-plugin;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-plugin;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-fork-run-plugin;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.play#sbt-fork-run-plugin;2.3.9[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml (2.3.9)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-fork-run-plugin;2.3.9!ivy.xml(ivy.original) (1496ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-fork-run-plugin;2.3.9 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom (2.3.9)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9!sbt-fork-run-protocol_2.10.pom(pom.original) (301ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/jars/sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/jars/sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/jars/sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/jars/sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/sbt-fork-run-protocol_2.10/2.3.9/jars/sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-run-support_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom (2.3.9)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.3.9!sbt-run-support_2.10.pom(pom.original) (298ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.3.9/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.3.9/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-run-support_2.10;2.3.9 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.3.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#build-link;2.3.9[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.3.9 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.3.9 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.3.9[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.3.9 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbtrc#client-2-10;0.3.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbtrc#client-2-10;0.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbtrc#client-2-10;0.3.1[0m
@@ -3031,18 +3128,121 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-plugin;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.play#sbt-plugin;2.3.9[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml (2.3.9)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.3.9!ivy.xml(ivy.original) (1530ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-plugin;2.3.9 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#routes-compiler_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#routes-compiler_2.10;2.3.9 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#routes-compiler_2.10;2.3.9 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/routes-compiler_2.10/2.3.9/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#routes-compiler_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#routes-compiler_2.10;2.3.9[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom (2.3.9)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#routes-compiler_2.10;2.3.9!routes-compiler_2.10.pom(pom.original) (307ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/jars/routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/jars/routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/jars/routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/routes-compiler_2.10/2.3.9/jars/routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/oneironym/.ivy2/local/com.typesafe.play/routes-compiler_2.10/2.3.9/jars/routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#routes-compiler_2.10;2.3.9 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt-core-next;0.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt-core-next;0.1.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt-core-next;0.1.1[0m
@@ -5183,15 +5383,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -5337,16 +5545,84 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt-core-next;0.1.1->org.scala-sbt#core-next_2.10;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -7480,15 +7756,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -7634,16 +7918,84 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt-core-next;0.1.1->org.scala-sbt#core-next_2.10;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -10417,15 +10769,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -10571,16 +10931,84 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt-core-next;0.1.1->org.scala-sbt#core-next_2.10;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -13061,15 +13489,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -13215,16 +13651,84 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt-core-next;0.1.1->org.scala-sbt#core-next_2.10;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -15360,15 +15864,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->org.webjars#mocha;1.17.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-mocha;1.0.0->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#metadata-browser-build;0.1-SNAPSHOT->com.typesafe.play#sbt-fork-run-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbtrc#client-2-10;0.3.1->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
@@ -15514,16 +16026,84 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#collections;0.13.8-M3->org.scala-lang#scala-library;2.10.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.play#sbt-run-support_2.10;2.3.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->com.typesafe.play#sbt-plugin;2.3.8 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.8->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.3.9->com.typesafe.play#build-link;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->com.typesafe.play#play-exceptions;2.3.9 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.9->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9->com.typesafe.sbtrc#client-2-10;0.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->com.typesafe.play#sbt-plugin;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#routes-compiler_2.10;2.3.9->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#routes-compiler_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.play#sbt-run-support_2.10;2.3.9 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe#config;1.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.mozilla#rhino;1.7R4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.javascript#closure-compiler;v20130603 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.google.guava#guava;16.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.h2database#h2;1.3.175 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->org.javassist#javassist;3.18.2-GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->net.contentobjects.jnotify#jnotify;0.94 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-twirl;1.0.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbteclipse#sbteclipse-plugin;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.github.mpeltonen#sbt-idea;1.5.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-native-packager;0.7.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-js-engine;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.9->com.typesafe.sbt#sbt-webdriver;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-fork-run-plugin;2.3.9->org.scala-sbt#sbt-core-next;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt-core-next;0.1.1->org.scala-sbt#core-next_2.10;0.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#core-next_2.10;0.1.1->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -15931,17 +16511,19 @@
 [0m[[0mdebug[0m] [0mall callers are evicted for org.scala-sbt#control;0.13.8-M3: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.3.8!sbt-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-coffeescript;1.0.0!sbt-coffeescript.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-less;1.0.0!sbt-less.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-jshint;1.0.1!sbt-jshint.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-rjs;1.0.1!sbt-rjs.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-digest;1.0.0!sbt-digest.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-mocha;1.0.0!sbt-mocha.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-fork-run-plugin;2.3.8!sbt-fork-run-plugin.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-fork-run-plugin.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-fork-run-plugin.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-fork-run-plugin.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-fork-run-plugin.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-fork-run-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-fork-run-plugin.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-fork-run-plugin;2.3.9!sbt-fork-run-plugin.jar (2596ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt-core-next;0.1.1!sbt-core-next.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#routes-compiler_2.10;2.3.8!routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-run-support_2.10;2.3.8!sbt-run-support_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mozilla#rhino;1.7R4!rhino.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.javascript#closure-compiler;v20130603!closure-compiler.jar[0m
@@ -15957,8 +16539,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-js-engine;1.0.1!sbt-js-engine.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-webdriver;1.0.0!sbt-webdriver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.8!build-link.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.3.8!play-exceptions.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json#json;20090211!json.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.10;1.0.2!twirl-compiler_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar[0m
@@ -16075,8 +16655,27 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#mocha;1.17.1!mocha.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#debug;0.7.4!debug.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#diff;1.0.7!diff.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.8!sbt-fork-run-protocol_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-fork-run-protocol_2.10/2.3.9/sbt-fork-run-protocol_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-fork-run-protocol_2.10;2.3.9!sbt-fork-run-protocol_2.10.jar (975ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-plugin.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-plugin.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-plugin.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-plugin.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.3.9/jars/sbt-plugin.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.3.9!sbt-plugin.jar (4546ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.3.9/sbt-run-support_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.3.9!sbt-run-support_2.10.jar (553ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbtrc#client-2-10;0.3.1!client-2-10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.3.9!build-link.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.3.9!play-exceptions.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#serialization_2.10;0.1.0!serialization_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#launcher-interface;0.13.8-M3!launcher-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#interface;0.13.8-M3!interface.jar[0m
@@ -16090,6 +16689,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control;0.13.8-M3!control.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/routes-compiler_2.10/2.3.9/routes-compiler_2.10-2.3.9.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#routes-compiler_2.10;2.3.9!routes-compiler_2.10.jar (1051ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#core-next_2.10;0.1.1!core-next_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.8-M5!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.8-M5!main.jar[0m
@@ -16138,7 +16743,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8-M5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10821ms :: artifacts dl 312ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 25755ms :: artifacts dl 10052ms[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT compile produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT runtime produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT test produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-test.xml[0m
@@ -16152,5 +16757,5 @@
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT docs produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT pom produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT scala-tool produced in /home/oneironym/jp/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (10821ms resolve - 312ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (25755ms resolve - 10052ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

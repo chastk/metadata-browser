@@ -1,6 +1,6 @@
 package controllers;
 
-import http.GetSolrQuery;
+import http.GetSparqlQuery;
 import http.JsonHandler;
 
 import java.io.IOException;
@@ -27,8 +27,8 @@ public class Hierarchy extends Controller {
     public static FacetsWithCategories pivot_facets = new FacetsWithCategories();
     public static FacetsWithCategories range_facets = new FacetsWithCategories();
     public static FacetsWithCategories cluster_facets = new FacetsWithCategories();
-    public static Map<String, Boolean> named_location = new HashMap<String, Boolean>();
-    public static Map<String, Boolean> spatial_predicate = new HashMap<String, Boolean>();
+    //public static Map<String, Boolean> named_location = new HashMap<String, Boolean>();
+    //public static Map<String, Boolean> spatial_predicate = new HashMap<String, Boolean>();
     public static SparqlQueryResults query_results = new SparqlQueryResults();
     
     public static void getFacets(JsonHandler jh){
@@ -48,7 +48,7 @@ public class Hierarchy extends Controller {
         catch (Exception e){
             e.printStackTrace();
         }
-    }
+    }// /getFacets
 
     // for /metadata HTTP GET requests
     public static Result index() {
@@ -58,7 +58,7 @@ public class Hierarchy extends Controller {
         
         //Get query using http.GetSolrQuery
         SparqlQuery query = new SparqlQuery();
-        GetSolrQuery query_submit = new GetSolrQuery(query);
+        GetSparqlQuery query_submit = new GetSparqlQuery(query);
         TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();
     	String final_query = null;
     	
@@ -74,14 +74,13 @@ public class Hierarchy extends Controller {
             query_results_list.put(collection, query_results);
     	}
         
-        
         //Get the facets
         getFacets(jh);
   
         //System.out.println();
         
-    // TODO: fix this (probably in a scala.html file for handling SPARQL results)
-        System.out.println("hierarchy postIndex() was called!");
+        // TODO: fix this (probably in a scala.html file for handling SPARQL results)
+        System.out.println("hierarchy index() was called!");
         return ok(hierarchy_faceting.render(formData, field_facets, query_facets,
                     range_facets, pivot_facets, cluster_facets, 
                     formData.get().subject, formData.get().predicate, query_results_list, "All Documents"));
@@ -115,7 +114,7 @@ public class Hierarchy extends Controller {
     	SparqlQuery query = new SparqlQuery(subject, predicate, field_facet_for_query, query_facets,
 			    pivot_facets, range_facets, cluster_facets);
 
-    	GetSolrQuery query_submit = new GetSolrQuery(query);
+    	GetSparqlQuery query_submit = new GetSparqlQuery(query);
 
     	//TODO loop over all queries in query_submit.list_of_queries
     	TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();

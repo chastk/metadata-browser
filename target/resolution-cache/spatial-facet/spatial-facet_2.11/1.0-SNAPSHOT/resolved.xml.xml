@@ -4,7 +4,7 @@
 		module="spatial-facet_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150601163530"
+		publication="20150602174519"
 	>
 		<description>
 		spatial-facet
@@ -36,15 +36,15 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.1" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.1" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.0.2" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play_2.11" rev="2.3.8" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.3.8" conf="test->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-docs_2.11" rev="2.3.8" conf="docs->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java_2.11" rev="2.3.8" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="fork-run_2.11" rev="2.3.8" conf="fork-run->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java-jdbc_2.11" rev="2.3.8" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.8" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.8" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.8" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.3.9" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-docs_2.11" rev="2.3.9" conf="docs->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="fork-run_2.11" rev="2.3.9" conf="fork-run->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-jdbc_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.9" conf="compile->default(compile)"/>
 		<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.5.1" conf="compile->default(compile)"/>

@@ -12,7 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class SparqlQueryResults extends QueryResults {
 
     public String json;
-    public ArrayList<Document> the_docs = new ArrayList<Document>();
+    //public ArrayList<Document> the_docs = new ArrayList<Document>();
 
     public SparqlQueryResults () {} 
 
@@ -28,14 +28,19 @@ public class SparqlQueryResults extends QueryResults {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-		//JsonNode documents = node.get("response").get("docs");
 		
 		JsonNode documents;
 		
-		//Surrounded with try catch to avoid null result set crashing the app
-		try {
-			documents = node.get("response").get("docs");
+		//TODO: add ability to dynamcially parse the vars out from the header
+		String subj = "s";
+		String pred = "p";
+		String obj = "o";
+		
+		System.out.println(node);
+		
+		//Need to update this to handle SPARQL-JSON format
+		/*try {
+			documents = node.get("bindings");
 			Iterator<JsonNode> doc_iterator = documents.iterator();
 			while (doc_iterator.hasNext()){
 				JsonNode doc = doc_iterator.next();
@@ -44,10 +49,7 @@ public class SparqlQueryResults extends QueryResults {
 				Iterator<String> docFields = doc.fieldNames();
 				while (docFields.hasNext()){
 					String docField = docFields.next();
-					if (docField.equals("characteristic")){
-						continue;
-					}
-					fields.put(docField, doc.get(docField).asText());
+					fields.put(subj, doc.get(sub)j.asText());
 					//System.out.println(docField);
 				}
 				
@@ -70,6 +72,6 @@ public class SparqlQueryResults extends QueryResults {
 			//System.out.println(the_docs.size());
 		} catch (Exception e){
 			e.printStackTrace();
-		}
-    }
+		}// /try/catch */
+    }// /SparqlQueryResults()
 }
