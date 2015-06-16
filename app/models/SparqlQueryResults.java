@@ -12,10 +12,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class SparqlQueryResults extends QueryResults {
 
     public String json;
-    //public ArrayList<Document> the_docs = new ArrayList<Document>();
-
+    public ArrayList<TripleDocument> triples_list = new ArrayList<TripleDocument>();
+    
     public SparqlQueryResults () {} 
 
+    // This constructor assumes that json is a well-formed JSON string
+    //  which also conforms to the SPARQL 1.1 Query Results JSON format:
+    //  http://www.w3.org/TR/sparql11-results-json/ 
     public SparqlQueryResults (String json) {
         this.json = json;
         //System.out.println(json);
@@ -28,50 +31,29 @@ public class SparqlQueryResults extends QueryResults {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		JsonNode documents;
+		node = node.get("results");
+		JsonNode bindings;
+		bindings = node.get("bindings");
 		
 		//TODO: add ability to dynamcially parse the vars out from the header
 		String subj = "s";
 		String pred = "p";
 		String obj = "o";
 		
-		System.out.println(node);
+		Iterator<JsonNode> iter = bindings.iterator();
 		
 		//Need to update this to handle SPARQL-JSON format
-		/*try {
-			documents = node.get("bindings");
-			Iterator<JsonNode> doc_iterator = documents.iterator();
-			while (doc_iterator.hasNext()){
-				JsonNode doc = doc_iterator.next();
-				TreeMap<String, String> fields = new TreeMap<String, String>();
-				
-				Iterator<String> docFields = doc.fieldNames();
-				while (docFields.hasNext()){
-					String docField = docFields.next();
-					fields.put(subj, doc.get(sub)j.asText());
-					//System.out.println(docField);
-				}
-				
-				List<JsonNode> characteristic = doc.findValues("characteristic");
-				ArrayList<String> characteristics = new ArrayList<String>();
-				for (JsonNode c : characteristic){
-					Iterator<String> chars = c.fieldNames();
-					while (chars.hasNext()){
-						//TODO Rename this
-						//TODO Figure out why I did this. Can't remember why it's here
-						String the_thing = chars.next();
-						//characteristics.add(the_thing);
-						//System.out.println(the_thing);
-					}
-					System.out.println(c.toString());
-					characteristics.add(c.toString());
-				}
-				the_docs.add(new Document(fields, characteristics));
+		try {
+		    while (iter.hasNext()){
+				JsonNode doc = iter.next();
+				TripleDocument triple = new TripleDocument(doc);
+				//System.out.println(triple);
+				triples_list.add(triple);
+	
 			}
 			//System.out.println(the_docs.size());
 		} catch (Exception e){
 			e.printStackTrace();
-		}// /try/catch */
+		}// /try/catch
     }// /SparqlQueryResults()
 }

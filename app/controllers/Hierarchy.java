@@ -56,7 +56,7 @@ public class Hierarchy extends Controller {
         JsonHandler jh = new JsonHandler();
         //ArrayList<String> names = new ArrayList<String>();
         
-        //Get query using http.GetSolrQuery
+        //Get query using http.GetSparqlQuery
         SparqlQuery query = new SparqlQuery();
         GetSparqlQuery query_submit = new GetSparqlQuery(query);
         TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();

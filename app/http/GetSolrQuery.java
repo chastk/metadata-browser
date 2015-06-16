@@ -79,7 +79,7 @@ public class GetSolrQuery {
     	collection_urls.put("collection1", "http://jeffersontest.tw.rpi.edu/solr/collection1/select?wt=json");
     	collection_urls.put("collection2", "http://jeffersontest.tw.rpi.edu/solr/collection2/select?wt=json");
     	collection_urls.put("datasets", "http://jeffersontest.tw.rpi.edu/solr/datasets/select?wt=json");
-    	collection_urls.put("metadata", "http://jeffersontest.tw.rpi.edu/solr/metadata/select?wt=json");
+    	//collection_urls.put("metadata", "http://jeffersontest.tw.rpi.edu/solr/metadata/select?wt=json");
     	collection_urls.put("wikimapia", "http://jeffersontest.tw.rpi.edu/solr/wikimapia/select?wt=json");
     	String lidarsonar = String.format("http://%s:%s@jeffersontest.tw.rpi.edu/solr/lidarsonar/select?wt=json", 
     			                           play.mvc.Controller.session("username"), play.mvc.Controller.session("password"));
