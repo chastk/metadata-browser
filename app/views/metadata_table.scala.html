@@ -1,0 +1,25 @@
+@(documentMap : models.SparqlQueryResults)
+
+    <h2 class="sub-header">Results</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Triples:</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                @for(triple <- documentMap.triples_list) {
+                <tr>
+                    @for((binding,uri) <- triple.items){
+                    <td>
+                        <p>@binding : @uri</p>
+                    </td>
+                    }
+                </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
