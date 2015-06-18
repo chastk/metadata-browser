@@ -4,7 +4,7 @@
     rangeFacets: models.FacetsWithCategories,
     pivotFacets: models.FacetsWithCategories,
     clusterFacets: models.FacetsWithCategories,
-    thingType: String,
+    subject: String,
     predicate: String, 
     documentMap : Map[String, models.SparqlQueryResults],
     final_query : String)
@@ -18,7 +18,7 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           @form(routes.Hierarchy.postIndex()) {
-            @hierarchy_fieldset(facetForm, fieldFacets, queryFacets, rangeFacets, pivotFacets, clusterFacets, thingType, predicate)
+            @hierarchy_fieldset(facetForm, fieldFacets, queryFacets, rangeFacets, pivotFacets, clusterFacets, subject, predicate)
         }
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -26,23 +26,19 @@
 		  <h4>@final_query</h4>
 		  <div class="row placeholders"></div>
 		  <ul class="nav nav-tabs">
-		    <li><a data-toggle="tab" href="#Platforms">Platforms</a></li>
-		    <li><a data-toggle="tab" href="#PlatformModels">Platform Models</a></li>
-		    <li><a data-toggle="tab" href="#Instruments">Instruments</a></li>
-		    <li><a data-toggle="tab" href="#InstrumentModels">Instrument Models</a></li>
-		    <li><a data-toggle="tab" href="#Detectors">Detectors</a></li>
-		    <li><a data-toggle="tab" href="#DetectorModels">Detector Models</a></li>
-		    <li><a data-toggle="tab" href="#Entities">Entities</a></li>
+		    @for((thingType, query_results) <- documentMap) {
+    		    <li><a data-toggle="tab" href="#@thingType">@thingType</a></li>
+		    }
 		  </ul>
           <div class="row placeholders"></div>
           <div class = "tab-content">
-          	@for((collection, query_results) <- documentMap) {
-          		
-          			<div id="@collection" class="tab-pane fade in">
-          				@metadata_table(query_results)
-          			</div>
-          		
-          	}
+            @for((thingType, query_results) <- documentMap) {
+            
+      			<div id="@thingType" class="tab-pane fade in">
+      				@metadata_table(query_results)
+      			</div>
+      			
+      		}
           </div>
         </div>
       </div>

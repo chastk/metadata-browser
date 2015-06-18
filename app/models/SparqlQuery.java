@@ -6,7 +6,7 @@ public class SparqlQuery extends Query {
 
     public String subject;
     public String predicate; 
-
+    
     //These are just lists of strings
     //because when the query gets submitted the "category" (e.g "characteristic")
     //they fall into is irrelevant
