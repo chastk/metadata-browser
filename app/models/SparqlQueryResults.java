@@ -66,3 +66,17 @@ public class SparqlQueryResults extends QueryResults {
 		}// /try/catch
     }// /SparqlQueryResults()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

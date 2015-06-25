@@ -21,17 +21,17 @@ import views.html.hierarchy_faceting;
 
 public class Hierarchy extends Controller {
 
-    public static FacetFormData facet_form = new FacetFormData();
-    public static FacetsWithCategories field_facets = new FacetsWithCategories();
-    public static FacetsWithCategories query_facets = new FacetsWithCategories();
-    public static FacetsWithCategories pivot_facets = new FacetsWithCategories();
-    public static FacetsWithCategories range_facets = new FacetsWithCategories();
-    public static FacetsWithCategories cluster_facets = new FacetsWithCategories();
+    //public static FacetFormData facet_form = new FacetFormData();
+    //public static FacetsWithCategories field_facets = new FacetsWithCategories();
+    //public static FacetsWithCategories query_facets = new FacetsWithCategories();
+    //public static FacetsWithCategories pivot_facets = new FacetsWithCategories();
+    //public static FacetsWithCategories range_facets = new FacetsWithCategories();
+    //public static FacetsWithCategories cluster_facets = new FacetsWithCategories();
     //public static Map<String, Boolean> named_location = new HashMap<String, Boolean>();
     //public static Map<String, Boolean> spatial_predicate = new HashMap<String, Boolean>();
     public static SparqlQueryResults query_results = new SparqlQueryResults();
     
-    public static void getFacets(JsonHandler jh){
+    /*public static void getFacets(JsonHandler jh){
     	//Get the facets
         try {
             if (jh.getFieldCountJson()) {
@@ -48,11 +48,11 @@ public class Hierarchy extends Controller {
         catch (Exception e){
             e.printStackTrace();
         }
-    }// /getFacets
+    }// /getFacets */
 
     // for /metadata HTTP GET requests
     public static Result index() {
-    	Form<FacetFormData> formData = Form.form(FacetFormData.class).fill(facet_form);
+    	//Form<FacetFormData> formData = Form.form(FacetFormData.class).fill(facet_form);
         JsonHandler jh = new JsonHandler();
         
         //Get query using http.GetSparqlQuery
@@ -75,13 +75,10 @@ public class Hierarchy extends Controller {
         }// /for tabname in types of entities
         
         //Get the facets
-        getFacets(jh);
+        //getFacets(jh);
 
         System.out.println("hierarchy index() was called!");
-        return ok(hierarchy_faceting.render(formData, field_facets, query_facets,
-                    range_facets, pivot_facets, cluster_facets, 
-                    formData.get().subject, formData.get().predicate,
-                    query_results_list, "All Documents"));
+        return ok(hierarchy_faceting.render(query_results_list, "All Documents"));
         
     }// /index()
 
@@ -94,23 +91,24 @@ public class Hierarchy extends Controller {
     	String predicate = "rdfs:subclassOf";
     	DynamicForm formData = Form.form().bindFromRequest();
     	
-    	FacetsWithCategories field_facet_for_query = new FacetsWithCategories();
+    	//FacetsWithCategories field_facet_for_query = new FacetsWithCategories();
     	
     	//Searching for the index of "[" is done here, because of the way the views are set up
     	//The scala will add a number to each category so as to map
     	//The same category to more than 1 facet
     	//When creating the query, however, this number is not needed.
-    	for (String category : formData.data().keySet()){
+    	/*for (String category : formData.data().keySet()){
     		if (category.contains("[")) {
     			int index = category.indexOf("[");
     			field_facet_for_query.addFacet(category.substring(0,index), formData.data().get(category));
     		} else {
     			subject = formData.data().get(category);
     		}
-    	}
+    	}*/
     	
-    	SparqlQuery query = new SparqlQuery(subject, predicate, field_facet_for_query, query_facets,
-			    pivot_facets, range_facets, cluster_facets);
+    	SparqlQuery query = new SparqlQuery(subject, predicate);
+    		//, field_facet_for_query, query_facets,
+			//    pivot_facets, range_facets, cluster_facets);
 
     	GetSparqlQuery query_submit = new GetSparqlQuery(query);
 
@@ -131,15 +129,13 @@ public class Hierarchy extends Controller {
     	}// /for tabname in types of entities
     	
         //Get the facets
-        getFacets(jh);
+        //getFacets(jh);
         
         //return ok("cool");
         // TODO: fix this, too
-        Form<FacetFormData> fd = Form.form(FacetFormData.class).fill(facet_form);
+        //Form<FacetFormData> fd = Form.form(FacetFormData.class).fill(facet_form);
         System.out.println("hierarchy postIndex() was called!");
-        return ok(hierarchy_faceting.render(fd, field_facets, query_facets,
-                range_facets, pivot_facets, cluster_facets, 
-                subject, predicate, query_results_list, final_query));
+        return ok(hierarchy_faceting.render(query_results_list, final_query));
     }// /postIndex()
 
 }

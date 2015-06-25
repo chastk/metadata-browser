@@ -1,14 +1,5 @@
-@(  facetForm: Form[views.formdata.FacetFormData],
-    fieldFacets: models.FacetsWithCategories,
-    queryFacets: models.FacetsWithCategories,
-    rangeFacets: models.FacetsWithCategories,
-    pivotFacets: models.FacetsWithCategories,
-    clusterFacets: models.FacetsWithCategories,
-    subject: String,
-    predicate: String, 
-    documentMap : Map[String, models.SparqlQueryResults],
-    final_query : String)
-
+@( documentMap : Map[String, models.SparqlQueryResults],
+   final_query : String)
 
 @import helper._
 
@@ -16,12 +7,7 @@
     <div class="container-fluid">
       
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          @form(routes.Hierarchy.postIndex()) {
-            @hierarchy_fieldset(facetForm, fieldFacets, queryFacets, rangeFacets, pivotFacets, clusterFacets, subject, predicate)
-        }
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-md-10 main">
           <h1 class="page-header">Metadata Browser</h1>
 		  <h4>@final_query</h4>
 		  <div class="row placeholders"></div>
@@ -35,9 +21,30 @@
             @for((thingType, query_results) <- documentMap) {
             
       			<div id="@thingType" class="tab-pane fade in">
-      				@metadata_table(query_results)
+      			    @if(thingType == "InstrumentModelsH") {
+      			    
+    				    <h2 class="sub-header">Results</h2>
+    					   <div class="table-responsive">
+    		
+							    <div id="body">
+      								<div id="footer">
+      								</div>
+    							</div>
+
+    							<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>
+					      		<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.js"></script>
+    							<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.layout.js"></script>
+    							<script type="text/javascript" src="/assets/javascripts/treeRenderer.js"></script>  					   
+    							<link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>
+    					   
+    					   </div>
+
+					} else {      			    
+
+      				   @metadata_table(query_results)
+
+      				}
       			</div>
-      			
       		}
           </div>
         </div>

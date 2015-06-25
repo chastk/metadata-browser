@@ -4,17 +4,19 @@
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
-              <tr>
-                <th>Triples:</th>
-              </tr>
+                 <tr>
+                    @for(x <- documentMap.vars) {
+                    <th>@x</th>
+                    }
+                 </tr>
             </thead>
 
             <tbody>
                 @for(triple <- documentMap.triples_list) {
                 <tr>
-                    @for((binding,uri) <- triple.items){
+                    @for((binding,value) <- triple.items){
                     <td>
-                        <p>@binding : @uri</p>
+                        <p>@value</p>
                     </td>
                     }
                 </tr>

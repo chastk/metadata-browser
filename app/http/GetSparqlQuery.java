@@ -30,7 +30,7 @@ public class GetSparqlQuery {
     public StringBuffer sparql_query = new StringBuffer();
     public TreeMap<String, StringBuffer> list_of_queries = new TreeMap<String, StringBuffer>();
     public String collection;
-    private int numThings = 7;
+    private int numThings = 8;
     public String[] thingTypes = new String[numThings];
     
     public GetSparqlQuery () {} 
@@ -93,6 +93,7 @@ public class GetSparqlQuery {
         thingTypes[4] = "Detectors";
         thingTypes[5] = "DetectorModels";
         thingTypes[6] = "Entities";
+        thingTypes[7] = "InstrumentModelsH";
     }
     
     public String querySelector(String tabName){
@@ -100,13 +101,16 @@ public class GetSparqlQuery {
         String q = "SELECT * WHERE { ?s ?p ?o } LIMIT 10";
         switch (tabName){
             case "Platforms" : 
-                q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
-                    "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
-                    "SELECT ?src ?dest ?dest_label WHERE {" +
-                    "    ?src rdfs:subClassOf+" + 
+                q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> " + 
+                    "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#> " + 
+                    "SELECT ?platName ?platModelName ?sn WHERE {" +
+                    "    ?platModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Platform>  ." + 
-                    "    ?dest a ?src ." + 
-                    "    ?dest rdfs:label ?dest_label ." + 
+                    "    ?plat a ?platModel ." +
+                    "    ?platModel rdfs:label ?platModelName ." +
+                    "    ?plat rdfs:label ?platName ." + 
+                    "    ?plat vstoi:hasSerialNumber ?sn ." + 
                     "}";
                 break;
             case "PlatformModels" : 
@@ -165,6 +169,16 @@ public class GetSparqlQuery {
                     "    ?dest a ?src ." + 
                     "    ?dest rdfs:label ?dest_label ." + 
                     "}";
+                break;
+            case "InstrumentModelsH" : 
+                q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
+                    "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
+                	"SELECT ?modelName ?superModelName WHERE { " + 
+                    "   ?model rdfs:subClassOf* <http://jefferson.tw.rpi.edu/ontology/vstoi#Instrument> . " + 
+                	"   ?model rdfs:subClassOf ?superModel .  " + 
+                	"   OPTIONAL { ?model rdfs:label ?modelName }  " + 
+                	"   OPTIONAL { ?superModel rdfs:label ?superModelName }  " +
+                	"}";
                 break;
         }// /switch
         return q;

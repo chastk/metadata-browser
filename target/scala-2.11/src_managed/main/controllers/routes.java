@@ -1,6 +1,6 @@
-// @SOURCE:/home/oneironym/jp/metadata-browser/conf/routes
+// @SOURCE:/Users/paulopinheiro/Documents/workspace/metadata-browser/conf/routes
 // @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Mon Jun 01 16:35:30 EDT 2015
+// @DATE:Tue Jun 23 19:17:12 EDT 2015
 
 package controllers;
 
