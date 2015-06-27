@@ -22,7 +22,7 @@ public class SparqlQueryResults extends QueryResults {
     // This constructor assumes that json is a well-formed JSON string
     //  which also conforms to the SPARQL 1.1 Query Results JSON format:
     //  http://www.w3.org/TR/sparql11-results-json/ 
-    public SparqlQueryResults (String json) {
+    public SparqlQueryResults (String json, String tabName) {
         this.json = json;
         System.out.println(json);
         // create an ObjectMapper instance.
@@ -56,7 +56,7 @@ public class SparqlQueryResults extends QueryResults {
 		try {
 		    while (parseResults.hasNext()){
 				JsonNode doc = parseResults.next();
-				TripleDocument triple = new TripleDocument(doc, vars);
+				TripleDocument triple = new TripleDocument(doc, vars, tabName);
 				//System.out.println(triple);
 				triples_list.add(triple);
 			}
@@ -66,17 +66,3 @@ public class SparqlQueryResults extends QueryResults {
 		}// /try/catch
     }// /SparqlQueryResults()
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

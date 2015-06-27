@@ -21,35 +21,8 @@ import views.html.hierarchy_faceting;
 
 public class Hierarchy extends Controller {
 
-    //public static FacetFormData facet_form = new FacetFormData();
-    //public static FacetsWithCategories field_facets = new FacetsWithCategories();
-    //public static FacetsWithCategories query_facets = new FacetsWithCategories();
-    //public static FacetsWithCategories pivot_facets = new FacetsWithCategories();
-    //public static FacetsWithCategories range_facets = new FacetsWithCategories();
-    //public static FacetsWithCategories cluster_facets = new FacetsWithCategories();
-    //public static Map<String, Boolean> named_location = new HashMap<String, Boolean>();
-    //public static Map<String, Boolean> spatial_predicate = new HashMap<String, Boolean>();
     public static SparqlQueryResults query_results = new SparqlQueryResults();
     
-    /*public static void getFacets(JsonHandler jh){
-    	//Get the facets
-        try {
-            if (jh.getFieldCountJson()) {
-                for (String key : jh.categories_and_facets.keySet()) {
-                    for (String facet : jh.categories_and_facets.get(key)){
-                        //HashMap<String, String> temp_map = new HashMap<String, String>();
-                        //temp_map.put(facet, jh.categories_facets_and_counts.get(key).get(facet));
-                        if (facet.equals("null")) {field_facets.addFacet(key, "missing"); continue;}
-                        field_facets.addFacet(key, facet);
-                    }
-                }
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-    }// /getFacets */
-
     // for /metadata HTTP GET requests
     public static Result index() {
     	//Form<FacetFormData> formData = Form.form(FacetFormData.class).fill(facet_form);
@@ -70,7 +43,7 @@ public class Hierarchy extends Controller {
     	    } catch (IllegalStateException | IOException e1) {
         		e1.printStackTrace();
         	}
-            SparqlQueryResults query_results = new SparqlQueryResults(query_json);
+            SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
             query_results_list.put(tabName, query_results);
         }// /for tabname in types of entities
         
@@ -91,24 +64,7 @@ public class Hierarchy extends Controller {
     	String predicate = "rdfs:subclassOf";
     	DynamicForm formData = Form.form().bindFromRequest();
     	
-    	//FacetsWithCategories field_facet_for_query = new FacetsWithCategories();
-    	
-    	//Searching for the index of "[" is done here, because of the way the views are set up
-    	//The scala will add a number to each category so as to map
-    	//The same category to more than 1 facet
-    	//When creating the query, however, this number is not needed.
-    	/*for (String category : formData.data().keySet()){
-    		if (category.contains("[")) {
-    			int index = category.indexOf("[");
-    			field_facet_for_query.addFacet(category.substring(0,index), formData.data().get(category));
-    		} else {
-    			subject = formData.data().get(category);
-    		}
-    	}*/
-    	
     	SparqlQuery query = new SparqlQuery(subject, predicate);
-    		//, field_facet_for_query, query_facets,
-			//    pivot_facets, range_facets, cluster_facets);
 
     	GetSparqlQuery query_submit = new GetSparqlQuery(query);
 
@@ -124,7 +80,7 @@ public class Hierarchy extends Controller {
     			} catch (IllegalStateException | IOException e1) {
     				e1.printStackTrace();
     			}
-    			SparqlQueryResults query_results = new SparqlQueryResults(query_json);
+    			SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
     			query_results_list.put(tabName, query_results);
     	}// /for tabname in types of entities
     	

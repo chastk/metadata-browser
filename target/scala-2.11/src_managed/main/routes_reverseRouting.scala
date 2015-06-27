@@ -1,6 +1,6 @@
-// @SOURCE:/Users/paulopinheiro/Documents/workspace/metadata-browser/conf/routes
+// @SOURCE:/home/oneironym/jp/metadata-browser/conf/routes
 // @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Tue Jun 23 19:17:12 EDT 2015
+// @DATE:Thu Jun 25 13:11:24 EDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

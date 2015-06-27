@@ -21,8 +21,8 @@
             @for((thingType, query_results) <- documentMap) {
             
       			<div id="@thingType" class="tab-pane fade in">
-      			    @if(thingType == "InstrumentModelsH") {
-      			    
+      			    @thingType match{
+                        case "InstrumentModelsH" => {
     				    <h2 class="sub-header">Results</h2>
     					   <div class="table-responsive">
     		
@@ -38,12 +38,25 @@
     							<link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>
     					   
     					   </div>
-
-					} else {      			    
-
-      				   @metadata_table(query_results)
-
-      				}
+					    } 
+					    case "Platforms" => { 
+                            <h2 class="sub-header">Platforms</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "Platforms"){
+                                                @platform_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        }
+					    case _ =>{
+      			            @metadata_table(query_results)
+      				    }
+      			    }
       			</div>
       		}
           </div>
