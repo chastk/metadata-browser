@@ -29,15 +29,15 @@ object instrument_entry extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appe
 Seq[Any](format.raw/*1.34*/("""
 
 """),_display_(/*3.2*/defining(triple.get("sn"))/*3.28*/ {itemID =>_display_(Seq[Any](format.raw/*3.39*/("""
-"""),format.raw/*4.1*/("""<div class="panel-heading" role="tab" id="headingOne">
+"""),format.raw/*4.1*/("""<div class="panel-heading" role="tab" id="heading"""),_display_(/*4.51*/itemID),format.raw/*4.57*/("""">
     <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#"""),_display_(/*6.100*/itemID),format.raw/*6.106*/("""" aria-expanded="false" aria-controls=""""),_display_(/*6.146*/itemID),format.raw/*6.152*/("""">
-            """),_display_(/*7.14*/triple/*7.20*/.get("detName")),format.raw/*7.35*/("""</a></h4>
+            """),_display_(/*7.14*/triple/*7.20*/.get("instName")),format.raw/*7.36*/("""</a></h4>
         
 </div>
 <div id=""""),_display_(/*10.11*/itemID),format.raw/*10.17*/("""" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading"""),_display_(/*10.92*/itemID),format.raw/*10.98*/("""">
     <div class="panel-body">
-        <p><b>"""),_display_(/*12.16*/triple/*12.22*/.get("detName")),format.raw/*12.37*/(""" """),format.raw/*12.38*/("""</b> (type: """),_display_(/*12.51*/triple/*12.57*/.get("detModelName")),format.raw/*12.77*/(""" """),format.raw/*12.78*/(""")</p>
+        <p><b>"""),_display_(/*12.16*/triple/*12.22*/.get("instName")),format.raw/*12.38*/(""" """),format.raw/*12.39*/("""</b> (type: """),_display_(/*12.52*/triple/*12.58*/.get("instModelName")),format.raw/*12.79*/(""" """),format.raw/*12.80*/(""")</p>
         <p>serial number """),_display_(/*13.27*/itemID),format.raw/*13.33*/("""</p>
     </div>
 </div>
@@ -53,11 +53,11 @@ Seq[Any](format.raw/*1.34*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Fri Jun 26 20:22:34 EDT 2015
+                  DATE: Tue Jun 30 17:50:49 EDT 2015
                   SOURCE: /home/oneironym/jp/metadata-browser/app/views/instrument_entry.scala.html
-                  HASH: 0432c6e3349296357cf254abe9e68c7b5f520ced
-                  MATRIX: 749->1|869->33|897->36|931->62|979->73|1006->74|1216->257|1243->263|1310->303|1337->309|1379->325|1393->331|1428->346|1491->382|1518->388|1620->463|1647->469|1721->516|1736->522|1772->537|1801->538|1841->551|1856->557|1897->577|1926->578|1985->610|2012->616
-                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|34->6|34->6|34->6|34->6|35->7|35->7|35->7|38->10|38->10|38->10|38->10|40->12|40->12|40->12|40->12|40->12|40->12|40->12|40->12|41->13|41->13
+                  HASH: 63a26d6b8384a1185939d1792fb1b984c3c1520e
+                  MATRIX: 749->1|869->33|897->36|931->62|979->73|1006->74|1082->124|1108->130|1266->261|1293->267|1360->307|1387->313|1429->329|1443->335|1479->351|1542->387|1569->393|1671->468|1698->474|1772->521|1787->527|1824->543|1853->544|1893->557|1908->563|1950->584|1979->585|2038->617|2065->623
+                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|32->4|32->4|34->6|34->6|34->6|34->6|35->7|35->7|35->7|38->10|38->10|38->10|38->10|40->12|40->12|40->12|40->12|40->12|40->12|40->12|40->12|41->13|41->13
                   -- GENERATED --
               */
           

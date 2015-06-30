@@ -24,7 +24,7 @@ public class SparqlQueryResults extends QueryResults {
     //  http://www.w3.org/TR/sparql11-results-json/ 
     public SparqlQueryResults (String json, String tabName) {
         this.json = json;
-        System.out.println(json);
+        //if(tabName == "PlatformModels") System.out.println(json);
         // create an ObjectMapper instance.
         ObjectMapper mapper = new ObjectMapper();
         // use the ObjectMapper to read the json string and create a tree

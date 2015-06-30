@@ -1,7 +1,7 @@
 @(triple : models.TripleDocument)
 
 @defining(triple.get("sn")) {itemID =>
-<div class="panel-heading" role="tab" id="headingOne">
+<div class="panel-heading" role="tab" id="heading@itemID">
     <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#@itemID" aria-expanded="false" aria-controls="@itemID">
             @triple.get("platName")</a></h4>

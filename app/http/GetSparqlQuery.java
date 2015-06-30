@@ -103,48 +103,65 @@ public class GetSparqlQuery {
             case "PlatformModels" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
-                    "SELECT ?src ?label WHERE {" +
-                    "    ?src rdfs:subClassOf+" + 
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +
+                    "SELECT ?platModelName ?maker ?desc WHERE {" +
+                    "    ?platModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Platform>  ." + 
-                    "    ?src rdfs:label ?label ." + 
+                    "    ?platModel rdfs:label ?platModelName ." + 
+                    "    OPTIONAL { ?platModel vstoi:hasMaker ?maker } ." + 
+                    "    OPTIONAL { ?platModel rdfs:comment ?desc } ." + 
                     "}";
                 break;
             case "Instruments" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" +
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" +
-                    "SELECT ?src ?dest ?dest_label WHERE {" +
-                    " ?src rdfs:subClassOf+" +
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +
+                    "SELECT ?instName ?instModelName ?sn WHERE {" +
+                    " ?instModel rdfs:subClassOf+" +
                     " <http://jefferson.tw.rpi.edu/ontology/vstoi#Instrument> ." +
-                    " ?dest a ?src ." +
-                    " ?dest rdfs:label ?dest_label ." +
+                    " ?inst a ?instModel ." +
+                    " ?inst rdfs:label ?instName ." +
+                    " OPTIONAL { ?inst vstoi:hasSerialNumber ?sn } ." +
+                    " ?instModel rdfs:label ?instModelName ." +
                     "}";
                 break;
             case "InstrumentModels" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
-                    "SELECT ?src ?label WHERE {" +
-                    "    ?src rdfs:subClassOf+" + 
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +
+                    "SELECT ?instModelName ?maker ?desc WHERE {" +
+                    "    ?instModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Instrument>  ." + 
-                    "    ?src rdfs:label ?label ." + 
+                    "    ?instModel rdfs:label ?instModelName ." + 
+                    "    ?instModel vstoi:hasMaker ?maker ." + 
+                    "    ?instModel rdfs:comment ?desc ." + 
                     "}";
                 break;
             case "Detectors" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" +
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" +
-                    "SELECT ?src ?dest ?dest_label WHERE {" +
-                    " ?src rdfs:subClassOf+" +
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +
+                    "SELECT ?detName ?detModelName ?sn WHERE {" +
+                    " ?detModel rdfs:subClassOf+" +
                     " <http://jefferson.tw.rpi.edu/ontology/vstoi#Detector> ." +
-                    " ?dest a ?src ." +
-                    " ?dest rdfs:label ?dest_label ." +
+                    " ?det a ?detModel ." +
+                    " ?det rdfs:label ?detName ." +
+                    " OPTIONAL { ?det vstoi:hasSerialNumber ?sn } ." +
+                    " ?detModel rdfs:label ?detModelName ." +
                     "}";
                 break;
             case "DetectorModels" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
-                    "SELECT ?src ?label WHERE {" +
-                    "    ?src rdfs:subClassOf+" + 
+                    "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +                    
+                    "PREFIX vsto: <http://jefferson.tw.rpi.edu/ontology/vsto-instrument#>" +
+                    "SELECT ?detModelName ?maker ?desc ?chara WHERE {" +
+                    "    ?detModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Detector>  ." + 
-                    "    ?src rdfs:label ?label ." + 
+                    "    ?detModel rdfs:label ?detModelName ." + 
+                    "    OPTIONAL { ?detModel vsto:hasMeasuredCharacteristic ?chara } ." +
+                    "    OPTIONAL { ?detModel vstoi:hasMaker ?maker } ." + 
+                    "    OPTIONAL { ?detModel rdfs:comment ?desc } ." + 
                     "}";
                 break;
             case "Entities" : 

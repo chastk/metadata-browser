@@ -51,7 +51,7 @@ public class Hierarchy extends Controller {
         //getFacets(jh);
 
         System.out.println("hierarchy index() was called!");
-        return ok(hierarchy_faceting.render(query_results_list, "All Documents"));
+        return ok(hierarchy_faceting.render(query_results_list, final_query));
         
     }// /index()
 

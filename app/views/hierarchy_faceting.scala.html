@@ -4,6 +4,7 @@
 @import helper._
 
 @main("Hierarchy Faceted Search") {
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
     <div class="container-fluid">
       
       <div class="row">
@@ -39,6 +40,20 @@
     					   
     					   </div>
 					    } 
+                        case "PlatformModels" => { 
+                            <h2 class="sub-header">Platform Models</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "PlatformModels"){
+                                                @platform_model_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        } 					    
 					    case "Platforms" => { 
                             <h2 class="sub-header">Platforms</h2>
                             <div><p>(click for more information)</p></div>
@@ -47,6 +62,62 @@
                                         @for(triple <- query_results.triples_list){
                                             @if(triple.resultType == "Platforms"){
                                                 @platform_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        }
+                        case "InstrumentModels" => { 
+                            <h2 class="sub-header">Instrument Models</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "InstrumentModels"){
+                                                @instrument_model_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        }                        
+                        case "Instruments" => { 
+                            <h2 class="sub-header">Instruments</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "Instruments"){
+                                                @instrument_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        }
+                        case "DetectorModels" => { 
+                            <h2 class="sub-header">Detector Models</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "DetectorModels"){
+                                                @detector_model_entry(triple) 
+                                            }
+                                        }
+                
+                                    </div>
+                                </div>
+                        }                             
+                        case "Detectors" => { 
+                            <h2 class="sub-header">Detectors</h2>
+                            <div><p>(click for more information)</p></div>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        @for(triple <- query_results.triples_list){
+                                            @if(triple.resultType == "Detectors"){
+                                                @detector_entry(triple) 
                                             }
                                         }
                 
