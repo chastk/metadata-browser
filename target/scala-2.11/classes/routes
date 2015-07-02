@@ -9,6 +9,8 @@ GET		/spatial					controllers.Spatial.index()
 POST	/spatial					controllers.Spatial.postIndex()
 GET		/metadata					controllers.Hierarchy.index()
 POST	/metadata					controllers.Hierarchy.postIndex()
+GET		/detectors   				controllers.Detector.index()
+POST	/detectors 	    			controllers.Detector.postIndex()
 
 POST	/login						controllers.Application.login()
 

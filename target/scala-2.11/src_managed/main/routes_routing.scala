@@ -1,6 +1,6 @@
 // @SOURCE:/home/tetherless/metadata-browser/conf/routes
-// @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Wed Jul 01 19:18:31 EDT 2015
+// @HASH:552a418c20a762659f3cb0382b5a252be5a6ad18
+// @DATE:Thu Jul 02 16:08:48 EDT 2015
 
 
 import scala.language.reflectiveCalls
@@ -75,20 +75,34 @@ controllers.Hierarchy.postIndex(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Hierarchy", "postIndex", Nil,"POST", """""", Routes.prefix + """metadata"""))
         
 
+// @LINE:12
+private[this] lazy val controllers_Detector_index6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("detectors"))))
+private[this] lazy val controllers_Detector_index6_invoker = createInvoker(
+controllers.Detector.index(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Detector", "index", Nil,"GET", """""", Routes.prefix + """detectors"""))
+        
+
 // @LINE:13
-private[this] lazy val controllers_Application_login6_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("login"))))
-private[this] lazy val controllers_Application_login6_invoker = createInvoker(
+private[this] lazy val controllers_Detector_postIndex7_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("detectors"))))
+private[this] lazy val controllers_Detector_postIndex7_invoker = createInvoker(
+controllers.Detector.postIndex(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Detector", "postIndex", Nil,"POST", """""", Routes.prefix + """detectors"""))
+        
+
+// @LINE:15
+private[this] lazy val controllers_Application_login8_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("login"))))
+private[this] lazy val controllers_Application_login8_invoker = createInvoker(
 controllers.Application.login(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "login", Nil,"POST", """""", Routes.prefix + """login"""))
         
 
-// @LINE:16
-private[this] lazy val controllers_Assets_at7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
+// @LINE:18
+private[this] lazy val controllers_Assets_at9_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at9_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix,"""controllers.Application.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.postIndex()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix,"""controllers.Application.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.postIndex()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -144,18 +158,34 @@ case controllers_Hierarchy_postIndex5_route(params) => {
 }
         
 
-// @LINE:13
-case controllers_Application_login6_route(params) => {
+// @LINE:12
+case controllers_Detector_index6_route(params) => {
    call { 
-        controllers_Application_login6_invoker.call(controllers.Application.login())
+        controllers_Detector_index6_invoker.call(controllers.Detector.index())
    }
 }
         
 
-// @LINE:16
-case controllers_Assets_at7_route(params) => {
+// @LINE:13
+case controllers_Detector_postIndex7_route(params) => {
+   call { 
+        controllers_Detector_postIndex7_invoker.call(controllers.Detector.postIndex())
+   }
+}
+        
+
+// @LINE:15
+case controllers_Application_login8_route(params) => {
+   call { 
+        controllers_Application_login8_invoker.call(controllers.Application.login())
+   }
+}
+        
+
+// @LINE:18
+case controllers_Assets_at9_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at7_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at9_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

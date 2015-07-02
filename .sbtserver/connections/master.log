@@ -1,31 +1,13 @@
-New log file opened at Thu Jul 02 13:04:21 EDT 2015 by 8537@tetherless-ThinkPad-T61p
-Taking next connection to: 53118
-New client attempting to connect on port: 33050-53118
-  Address = /127.0.1.1:53118
-This client on port 33050 has uuid 7036ec03-3b2b-42b6-a334-38cc0da3309e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-7036ec03-3b2b-42b6-a334-38cc0da3309e
-Taking next connection to: 53118
-New client attempting to connect on port: 33051-53118
-  Address = /127.0.1.1:53118
-Handshake exception on socket: 33051
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 53118
-New client attempting to connect on port: 33052-53118
-  Address = /127.0.1.1:53118
-This client on port 33052 has uuid 2872b3a4-198b-4e2f-8696-4d4cd6cdb0c7 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-7036ec03-3b2b-42b6-a334-38cc0da3309e, activator-2872b3a4-198b-4e2f-8696-4d4cd6cdb0c7
-Taking next connection to: 53118
-New client attempting to connect on port: 33084-53118
-  Address = /127.0.1.1:53118
-Handshake exception on socket: 33084
+New log file opened at Thu Jul 02 18:25:06 EDT 2015 by 17269@tetherless-ThinkPad-T61p
+Taking next connection to: 43053
+New client attempting to connect on port: 38959-43053
+  Address = /127.0.1.1:43053
+This client on port 38959 has uuid c33915a1-7943-42c9-8a5e-bd10fdf2778c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-c33915a1-7943-42c9-8a5e-bd10fdf2778c
+Taking next connection to: 43053
+New client attempting to connect on port: 39024-43053
+  Address = /127.0.1.1:43053
+Handshake exception on socket: 39024
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -39,21 +21,56 @@ Caused by: java.net.SocketException: Connection reset
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 53118
-New client attempting to connect on port: 33085-53118
-  Address = /127.0.1.1:53118
-This client on port 33085 has uuid d913c248-4773-47e7-87e5-9cf1cb9c525a configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-2872b3a4-198b-4e2f-8696-4d4cd6cdb0c7, play-fork-run-d913c248-4773-47e7-87e5-9cf1cb9c525a
-Taking next connection to: 53118
+Taking next connection to: 43053
+New client attempting to connect on port: 39025-43053
+  Address = /127.0.1.1:43053
+This client on port 39025 has uuid b6e5dd46-178a-4511-9a46-fdf0a196d99c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b6e5dd46-178a-4511-9a46-fdf0a196d99c
+Taking next connection to: 43053
+New client attempting to connect on port: 39032-43053
+  Address = /127.0.1.1:43053
+Handshake exception on socket: 39032
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 43053
+New client attempting to connect on port: 39033-43053
+  Address = /127.0.1.1:43053
+This client on port 39033 has uuid c1a5f78b-f7ed-4ca7-acce-d903208b5fad configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b6e5dd46-178a-4511-9a46-fdf0a196d99c, activator-c1a5f78b-f7ed-4ca7-acce-d903208b5fad
+Taking next connection to: 43053
+New client attempting to connect on port: 39095-43053
+  Address = /127.0.1.1:43053
+Handshake exception on socket: 39095
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 43053
+New client attempting to connect on port: 39096-43053
+  Address = /127.0.1.1:43053
+This client on port 39096 has uuid da74b591-9c0a-4bc1-a735-369b4e7338ec configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-c1a5f78b-f7ed-4ca7-acce-d903208b5fad, play-fork-run-da74b591-9c0a-4bc1-a735-369b4e7338ec
+Taking next connection to: 43053
 Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 53118
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 53118
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 53118
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 53118
+No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 17269@tetherless-ThinkPad-T61p logs at Thu Jul 02 18:33:50 EDT 2015, goodbye.

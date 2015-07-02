@@ -1,5 +1,5 @@
-New log file opened at Thu Jul 02 13:04:21 EDT 2015 by 8537@tetherless-ThinkPad-T61p
-jvm 8537@tetherless-ThinkPad-T61p
+New log file opened at Thu Jul 02 18:25:06 EDT 2015 by 17269@tetherless-ThinkPad-T61p
+jvm 17269@tetherless-ThinkPad-T61p
 jvm vmName=OpenJDK Server VM vmVendor=Oracle Corporation vmVersion=24.79-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.7
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:PermSize=64m, -XX:MaxPermSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/tetherless/metadata-browser/project, returning: (metadata-browser-build)
 Loading project definition from /home/tetherless/metadata-browser/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1da022d, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@13d8348, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to spatial-facet (in build file:/home/tetherless/metadata-br
 > server-handle-next-server-request
 > {file:/home/tetherless/metadata-browser/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b7d419, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@eaf435, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,40 +84,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed Jul 2, 2015 1:04:34 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/tetherless/metadata-browser/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@13606c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Jul 2, 2015 1:04:35 PM
+Total time: 1 s, completed Jul 2, 2015 6:25:17 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/tetherless/metadata-browser/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@15aa39, check cycles: false
-Total time: 0 s, completed Jul 2, 2015 1:04:35 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1769885, check cycles: false
+Total time: 0 s, completed Jul 2, 2015 6:25:17 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/tetherless/metadata-browser/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@c9e0db, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@bd2ecb, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -134,30 +112,108 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Jul 2, 2015 1:04:36 PM
+Total time: 1 s, completed Jul 2, 2015 6:25:17 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/tetherless/metadata-browser/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@187ef57, check cycles: false
+Total time: 0 s, completed Jul 2, 2015 6:25:17 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@106da95, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jul 2, 2015 6:27:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/tetherless/metadata-browser/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@aef125, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jul 2, 2015 6:27:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/tetherless/metadata-browser/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@cb338, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Jul 2, 2015 6:27:58 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/tetherless/metadata-browser/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1269032, check cycles: false
+Total time: 0 s, completed Jul 2, 2015 6:27:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@3f6fa, check cycles: false
-Total time: 0 s, completed Jul 2, 2015 1:06:04 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@182ec55, check cycles: false
+Total time: 0 s, completed Jul 2, 2015 6:30:46 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/tetherless/metadata-browser/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1ba900b, check cycles: false
-Total time: 0 s, completed Jul 2, 2015 1:06:08 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e30cac, check cycles: false
+Total time: 1 s, completed Jul 2, 2015 6:30:50 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@136b5f9, check cycles: false
-Total time: 0 s, completed Jul 2, 2015 1:06:09 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1022e6c, check cycles: false
+Total time: 0 s, completed Jul 2, 2015 6:30:52 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/tetherless/metadata-browser/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@185ac15, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1938f15, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -177,325 +233,13 @@ All initially invalidated sources: Set()
 Copy resource mappings: 
 	(/home/tetherless/metadata-browser/conf/application.conf,/home/tetherless/metadata-browser/target/scala-2.11/classes/application.conf)
 	(/home/tetherless/metadata-browser/conf/routes,/home/tetherless/metadata-browser/target/scala-2.11/classes/routes)
-Total time: 2 s, completed Jul 2, 2015 1:06:16 PM
+Total time: 2 s, completed Jul 2, 2015 6:30:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4600c0, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/tetherless/metadata-browser/app/models/TripleDocument.java, /home/tetherless/metadata-browser/target/scala-2.11/twirl/main/views/html/hierarchy_faceting.template.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/tetherless/metadata-browser/app/models/TripleDocument.java, /home/tetherless/metadata-browser/target/scala-2.11/twirl/main/views/html/hierarchy_faceting.template.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/app/models/TripleDocument.java, /home/tetherless/metadata-browser/target/scala-2.11/twirl/main/views/html/hierarchy_faceting.template.scala)
-
-Read from stdout: Compiling 1 Scala source and 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 1 Scala source and 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 1ffda4b, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes:/home/tetherless/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
-	-classpath
-	/home/tetherless/metadata-browser/target/scala-2.11/classes:/home/tetherless/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/tetherless/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/tetherless/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/tetherless/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.1.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.1.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/tetherless/.ivy2/cache/io.netty/netty/bundles/netty-3.9.8.Final.jar:/home/tetherless/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/tetherless/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/tetherless/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/tetherless/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/tetherless/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/tetherless/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/tetherless/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/tetherless/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/tetherless/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/tetherless/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/tetherless/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/tetherless/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/tetherless/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/tetherless/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/tetherless/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/tetherless/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/tetherless/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/tetherless/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/tetherless/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/tetherless/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/tetherless/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/home/tetherless/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/home/tetherless/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/home/tetherless/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/home/tetherless/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/tetherless/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.3.6.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.3.3.jar:/home/tetherless/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.3.jar:/home/tetherless/.ivy2/cache/commons-io/commons-io/jars/commons-io-1.3.2.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/fluent-hc/jars/fluent-hc-4.3.6.jar
-Scala compilation took 10.456596603 s
-Attempting to call com.sun.tools.javac.api.JavacTool@e123f1 directly...
-Java compilation took 0.773893802 s
-Java analysis took 0.024109566 s
-Java compile + analysis took 0.809261364 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 13 s, completed Jul 2, 2015 1:10:21 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/tetherless/metadata-browser/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1868264, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/tetherless/metadata-browser/conf/application.conf,/home/tetherless/metadata-browser/target/scala-2.11/classes/application.conf)
-	(/home/tetherless/metadata-browser/conf/routes,/home/tetherless/metadata-browser/target/scala-2.11/classes/routes)
-Total time: 2 s, completed Jul 2, 2015 1:10:23 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@10621bd, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/tetherless/metadata-browser/app/models/TreeQuery.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/tetherless/metadata-browser/app/models/TreeQuery.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/app/models/TreeQuery.java)
-
-Read from stdout: Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@11bc1e1 directly...
-Java compilation took 0.114917473 s
-Java analysis took 0.126603253 s
-Java compile + analysis took 0.252225865 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Jul 2, 2015 1:12:17 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@12cf0e3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/tetherless/metadata-browser/app/models/SparqlQueryResults.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/tetherless/metadata-browser/app/models/SparqlQueryResults.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/app/models/SparqlQueryResults.java)
-
-Read from stdout: Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@19a2129 directly...
-Java compilation took 0.12108942 s
-Java analysis took 0.004393787 s
-Java compile + analysis took 0.132798524 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Jul 2, 2015 1:13:04 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/tetherless/metadata-browser/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5d78f8, check cycles: false
-Invalidating /home/tetherless/metadata-browser/target/scala-2.11/classes/models/SparqlQueryResults.class: stamp changed from lastModified(1435856614000) to lastModified(1435857184000)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(/home/tetherless/metadata-browser/target/scala-2.11/classes/models/SparqlQueryResults.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(/home/tetherless/metadata-browser/target/scala-2.11/twirl/main/views/html/hierarchy_faceting.template.scala)
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/target/scala-2.11/twirl/main/views/html/hierarchy_faceting.template.scala)
-
-Read from stdout: Compiling 1 Scala source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 1 Scala source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 7bda6, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes:/home/tetherless/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
-	-classpath
-	/home/tetherless/metadata-browser/target/scala-2.11/classes:/home/tetherless/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/home/tetherless/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/home/tetherless/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/home/tetherless/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.1.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.1.jar:/home/tetherless/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/home/tetherless/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/home/tetherless/.ivy2/cache/io.netty/netty/bundles/netty-3.9.8.Final.jar:/home/tetherless/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/home/tetherless/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/home/tetherless/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/home/tetherless/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/home/tetherless/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/home/tetherless/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/home/tetherless/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/home/tetherless/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/home/tetherless/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/home/tetherless/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/home/tetherless/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/home/tetherless/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/home/tetherless/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/home/tetherless/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/home/tetherless/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/home/tetherless/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/home/tetherless/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/home/tetherless/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/home/tetherless/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/home/tetherless/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/home/tetherless/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/home/tetherless/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/home/tetherless/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/home/tetherless/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/home/tetherless/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.9.jar:/home/tetherless/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/home/tetherless/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/home/tetherless/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.3.6.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.3.3.jar:/home/tetherless/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.3.jar:/home/tetherless/.ivy2/cache/commons-io/commons-io/jars/commons-io-1.3.2.jar:/home/tetherless/.ivy2/cache/org.apache.httpcomponents/fluent-hc/jars/fluent-hc-4.3.6.jar
-Scala compilation took 3.440124688 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/tetherless/metadata-browser/conf/application.conf,/home/tetherless/metadata-browser/target/scala-2.11/classes/application.conf)
-	(/home/tetherless/metadata-browser/conf/routes,/home/tetherless/metadata-browser/target/scala-2.11/classes/routes)
-Total time: 5 s, completed Jul 2, 2015 1:13:22 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b8e9ed, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java)
-
-Read from stdout: Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 1 Java source to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@a944ca directly...
-Read from stdout: /home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: /home/tetherless/metadata-browser/app/http/GetSparqlQuery.java uses or overrides a deprecated API.
-/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: /home/tetherless/metadata-browser/app/http/GetSparqlQuery.java uses or overrides a deprecated API.
-Read from stdout: /home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: Recompile with -Xlint:deprecation for details.
-/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: Recompile with -Xlint:deprecation for details.
-Java compilation took 0.200324637 s
-Java analysis took 0.004959989 s
-Java compile + analysis took 0.21222685 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed Jul 2, 2015 1:17:36 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/tetherless/metadata-browser/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@de4a7a, check cycles: false
-Invalidating /home/tetherless/metadata-browser/target/scala-2.11/classes/http/GetSparqlQuery.class: stamp changed from lastModified(1435856615000) to lastModified(1435857456000)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(/home/tetherless/metadata-browser/target/scala-2.11/classes/http/GetSparqlQuery.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(/home/tetherless/metadata-browser/app/controllers/Instrument.java, /home/tetherless/metadata-browser/app/models/TreeQuery.java)
-	external source: Set()
-All initially invalidated sources: Set(/home/tetherless/metadata-browser/app/controllers/Instrument.java, /home/tetherless/metadata-browser/app/models/TreeQuery.java)
-
-Read from stdout: Compiling 2 Java sources to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Compiling 2 Java sources to /home/tetherless/metadata-browser/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@89a221 directly...
-Java compilation took 0.27577718 s
-Java analysis took 0.138202493 s
-Java compile + analysis took 0.435776857 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Copy resource mappings: 
-	(/home/tetherless/metadata-browser/conf/application.conf,/home/tetherless/metadata-browser/target/scala-2.11/classes/application.conf)
-	(/home/tetherless/metadata-browser/conf/routes,/home/tetherless/metadata-browser/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Jul 2, 2015 1:17:40 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@1792fbf, check cycles: false
-Total time: 0 s, completed Jul 2, 2015 1:18:09 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-Exception in thread "Thread-4" java.io.IOException: Stream closed
-	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:162)
-	at java.io.BufferedInputStream.read1(BufferedInputStream.java:272)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:154)
-	at java.io.BufferedReader.readLine(BufferedReader.java:317)
-	at java.io.BufferedReader.readLine(BufferedReader.java:382)
-	at sbt.BasicIO$$anonfun$processFully$1$$anonfun$apply$8.apply(ProcessImpl.scala:58)
-	at sbt.BasicIO$$anonfun$processFully$1$$anonfun$apply$8.apply(ProcessImpl.scala:58)
-	at sbt.BasicIO$.readFully$1(ProcessImpl.scala:63)
-	at sbt.BasicIO$.processLinesFully(ProcessImpl.scala:69)
-	at sbt.BasicIO$$anonfun$processFully$1.apply(ProcessImpl.scala:58)
-	at sbt.BasicIO$$anonfun$processFully$1.apply(ProcessImpl.scala:55)
-	at play.sbt.forkrun.PlayForkProcess$$anonfun$2.apply$mcV$sp(PlayForkProcess.scala:47)
-	at play.sbt.forkrun.PlayForkProcess$$anon$1.run(PlayForkProcess.scala:120)
-	at java.lang.Thread.run(Thread.java:745)
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@17f7a10, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed Jul 2, 2015 1:18:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 17269@tetherless-ThinkPad-T61p logs at Thu Jul 02 18:33:50 EDT 2015, goodbye.

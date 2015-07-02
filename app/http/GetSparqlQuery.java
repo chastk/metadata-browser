@@ -44,7 +44,6 @@ public class GetSparqlQuery {
 
     // for SPARQL queries!
     public GetSparqlQuery (SparqlQuery query) {
-        //addSparqlUrls();
         addThingTypes();
         this.collection = "http://jeffersontest.tw.rpi.edu/solr4/store/sparql";
         for (String tabName : thingTypes ){
@@ -52,15 +51,6 @@ public class GetSparqlQuery {
             this.sparql_query.append(collection);
             this.sparql_query.append("?q=");
             String q = querySelector(tabName);
-            /*String q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
-                       "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
-                       "SELECT ?s ?p ?o WHERE {" +
-                       "    ?s rdfs:subClassOf+" + 
-                       "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Platform>  ." + 
-                       "    ?p a ?s ." + 
-                       "    ?p rdfs:label ?o ." + 
-                       "}";*/
-            //String q = "SELECT ?s ?p ?o WHERE {}"
             
             String quote = new String();
             try {
@@ -78,6 +68,28 @@ public class GetSparqlQuery {
             //System.out.println(tabName + " : " + this.sparql_query);
             this.list_of_queries.put(tabName, this.sparql_query);
         }
+    }// /getSolrQuery for SPARQL
+    
+    // For SPARQL queries that only make one query (instead of for all tabs)
+    // Ideally, the above method should be depreciated in favor of this one, as we move
+    //    all thingType queries to their own separate pages.
+    public GetSparqlQuery (SparqlQuery query, String tabName) {
+        this.collection = "http://jeffersontest.tw.rpi.edu/solr4/store/sparql";
+        this.sparql_query = new StringBuffer();
+        this.sparql_query.append(collection);
+        this.sparql_query.append("?q=");
+        String q = querySelector(tabName);
+            
+        String quote = new String();
+        try {
+            this.sparql_query.append(URLEncoder.encode(q, "UTF-8"));
+            quote = URLEncoder.encode("\"", "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+            
+        //System.out.println(tabName + " : " + this.sparql_query);
+        this.list_of_queries.put(tabName, this.sparql_query);
     }// /getSolrQuery for SPARQL
 
     // TYPES of THINGS in the metadata. These should be high-level concepts.
@@ -231,7 +243,7 @@ public class GetSparqlQuery {
         	HttpResponse response = client.execute(request);
             StringWriter writer = new StringWriter();
             IOUtils.copy(response.getEntity().getContent(), writer, "utf-8");
-    
+            //System.out.println("response: " + response);   
             return writer.toString();
             
         } finally

@@ -15224,7 +15224,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 18329ms :: artifacts dl 350ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 23385ms :: artifacts dl 280ms[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT compile produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT runtime produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT test produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-test.xml[0m
@@ -15238,5 +15238,5 @@
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT docs produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT pom produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#metadata-browser-build;0.1-SNAPSHOT scala-tool produced in /home/tetherless/metadata-browser/project/target/resolution-cache/reports/default-metadata-browser-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (18329ms resolve - 350ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (23385ms resolve - 280ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
