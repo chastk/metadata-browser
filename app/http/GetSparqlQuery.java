@@ -52,7 +52,16 @@ public class GetSparqlQuery {
             this.sparql_query.append(collection);
             this.sparql_query.append("?q=");
             String q = querySelector(tabName);
-
+            /*String q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
+                       "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
+                       "SELECT ?s ?p ?o WHERE {" +
+                       "    ?s rdfs:subClassOf+" + 
+                       "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Platform>  ." + 
+                       "    ?p a ?s ." + 
+                       "    ?p rdfs:label ?o ." + 
+                       "}";*/
+            //String q = "SELECT ?s ?p ?o WHERE {}"
+            
             String quote = new String();
             try {
                 this.sparql_query.append(URLEncoder.encode(q, "UTF-8"));
@@ -61,6 +70,12 @@ public class GetSparqlQuery {
                 e.printStackTrace();
             }
             
+            /*for (String field_facet_category : query.field_facets.facets.keySet()){
+                for (String field_facet : query.field_facets.facets.get(field_facet_category).keySet()){
+                    this.sparql_query.append(String.format("&fq=%s:%s%s%s", field_facet_category.replace(" ", "%20"), quote, field_facet.replace(" ", "%20"), quote));
+                }
+            }*/
+            //System.out.println(tabName + " : " + this.sparql_query);
             this.list_of_queries.put(tabName, this.sparql_query);
         }
     }// /getSolrQuery for SPARQL
@@ -79,6 +94,7 @@ public class GetSparqlQuery {
         thingTypes[5] = "DetectorModels";
         thingTypes[6] = "Entities";
         thingTypes[7] = "InstrumentModelsH";
+        //thingTypes[8] = "EntitiesH";
     }
     
     public String querySelector(String tabName){
@@ -89,15 +105,13 @@ public class GetSparqlQuery {
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> " + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#> " + 
                     "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#> " + 
-                    "SELECT ?platName ?platModelName ?sn ?lat ?lng WHERE {" +
+                    "SELECT ?platName ?platModelName ?sn WHERE {" +
                     "    ?platModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Platform>  ." + 
                     "    ?plat a ?platModel ." +
                     "    ?platModel rdfs:label ?platModelName ." +
                     "    ?plat rdfs:label ?platName ." + 
-                    "    ?plat vstoi:hasSerialNumber ?sn ." +
-                    "    ?plat vstoi:hasX ?lat ." +
-                    "    ?plat vstoi:hasY ?lng ." +
+                    "    ?plat vstoi:hasSerialNumber ?sn ." + 
                     "}";
                 break;
             case "PlatformModels" : 
@@ -179,6 +193,16 @@ public class GetSparqlQuery {
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
                 	"SELECT ?modelName ?superModelName WHERE { " + 
                     "   ?model rdfs:subClassOf* <http://jefferson.tw.rpi.edu/ontology/vstoi#Instrument> . " + 
+                	"   ?model rdfs:subClassOf ?superModel .  " + 
+                	"   OPTIONAL { ?model rdfs:label ?modelName }  " + 
+                	"   OPTIONAL { ?superModel rdfs:label ?superModelName }  " +
+                	"}";
+                break;
+            case "EntitiesH" : 
+                q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
+                    "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
+                	"SELECT ?modelName ?superModelName WHERE { " + 
+                    "   ?model rdfs:subClassOf* <http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#Entity> . " + 
                 	"   ?model rdfs:subClassOf ?superModel .  " + 
                 	"   OPTIONAL { ?model rdfs:label ?modelName }  " + 
                 	"   OPTIONAL { ?superModel rdfs:label ?superModelName }  " +

@@ -1,9 +1,0 @@
-2015-07-01 12:54:36,507 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-6 
-Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-
-2015-07-01 12:54:44,422 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-07-01 12:57:07,716 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-

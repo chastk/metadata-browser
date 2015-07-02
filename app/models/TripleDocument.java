@@ -24,7 +24,7 @@ public class TripleDocument{
 	        } catch (NullPointerException e){
 	            if(vars.get(i).equals("sn")) {
 	                variable = generateID();
-	                //System.out.println(resultType + " is missing a serial number! " + variable + " generated as placeholder");
+	                System.out.println(resultType + " is missing a serial number! " + variable + " generated as placeholder");
 	            }
 	            else {
 	                variable = "[NULL]";
