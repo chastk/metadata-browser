@@ -1,6 +1,6 @@
-// @SOURCE:/home/oneironym/jp/metadata-browser/conf/routes
+// @SOURCE:/home/tetherless/metadata-browser/conf/routes
 // @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Thu Jun 25 13:11:24 EDT 2015
+// @DATE:Wed Jul 01 19:18:31 EDT 2015
 
 package controllers;
 
