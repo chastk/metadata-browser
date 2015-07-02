@@ -11,12 +11,14 @@ import java.util.TreeMap;
 import models.FacetsWithCategories;
 import models.SparqlQuery;
 import models.SparqlQueryResults;
+import models.TreeQuery;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.formdata.FacetFormData;
 import views.html.hierarchy_faceting;
+import views.html.instrument_browser;
 
 
 public class Hierarchy extends Controller {
@@ -25,6 +27,43 @@ public class Hierarchy extends Controller {
     
     // for /metadata HTTP GET requests
     public static Result index() {
+    	//Get query using http.GetSparqlQuery
+        SparqlQuery query = new SparqlQuery();
+        GetSparqlQuery query_submit = new GetSparqlQuery(query);
+        // query_submit contains 7 queries: one for each thingType right now
+        TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();
+        TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();
+    	for (String tabName : query_submit.thingTypes){
+        	if (tabName.endsWith("H")) {
+        		System.out.println("Hierarchy.java is requesting: " + tabName);
+        		TreeQuery tq = new TreeQuery(tabName);
+                hierarchy_results_list.put(tabName, tq.getQueryResult().replace("\n", " "));
+        	} else {
+        		String query_json = null;
+        		try {
+        			query_json = query_submit.executeQuery(tabName);
+        		} catch (IllegalStateException | IOException e1) {
+        			e1.printStackTrace();
+        		}
+        		SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
+        		query_results_list.put(tabName, query_results);
+        	}
+        }// /for tabname in types of entities
+        
+        //Get the facets
+        //getFacets(jh);
+
+        System.out.println("hierarchy index() was called!");
+        System.out.println("mapping 1 size is " + query_results_list.size());
+        System.out.println("mapping 2 size is " + hierarchy_results_list.size());
+        
+        return ok(hierarchy_faceting.render(query_results_list, hierarchy_results_list, "All Documents"));
+        
+    }// /index()
+
+
+    // for /metadata HTTP POST requests
+    public static Result postIndex() {
     	//Form<FacetFormData> formData = Form.form(FacetFormData.class).fill(facet_form);
         JsonHandler jh = new JsonHandler();
         
@@ -33,65 +72,31 @@ public class Hierarchy extends Controller {
         GetSparqlQuery query_submit = new GetSparqlQuery(query);
         // query_submit contains 7 queries: one for each thingType right now
         TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();
+        TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();
     	String final_query = null;
         for (String tabName : query_submit.thingTypes){
-            //System.out.println("index(): " + tabName);
-    	    final_query = query_submit.collection.toString();
-    	    String query_json = null;
-            try {
-    		    query_json = query_submit.executeQuery(tabName);
-    	    } catch (IllegalStateException | IOException e1) {
-        		e1.printStackTrace();
+        	if (tabName.endsWith("H")) {
+            	TreeQuery tq = new TreeQuery(tabName);
+                hierarchy_results_list.put(tabName, tq.getQueryResult().replace("\n", " "));
+        	} else {
+        		//System.out.println("index(): " + tabName);
+        		final_query = query_submit.collection.toString();
+        		String query_json = null;
+        		try {
+        			query_json = query_submit.executeQuery(tabName);
+        		} catch (IllegalStateException | IOException e1) {
+        			e1.printStackTrace();
+        		}
+        		SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
+        		query_results_list.put(tabName, query_results);
         	}
-            SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
-            query_results_list.put(tabName, query_results);
         }// /for tabname in types of entities
         
         //Get the facets
         //getFacets(jh);
 
         System.out.println("hierarchy index() was called!");
-        return ok(hierarchy_faceting.render(query_results_list, final_query));
-        
-    }// /index()
-
-
-    // for /metadata HTTP POST requests
-    public static Result postIndex() {
-        
-    	JsonHandler jh = new JsonHandler();
-    	String subject = new String();
-    	String predicate = "rdfs:subclassOf";
-    	DynamicForm formData = Form.form().bindFromRequest();
-    	
-    	SparqlQuery query = new SparqlQuery(subject, predicate);
-
-    	GetSparqlQuery query_submit = new GetSparqlQuery(query);
-
-    	//TODO loop over all queries in query_submit.list_of_queries
-    	TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();
-    	String final_query = null;
-
-    	for (String tabName : query_submit.thingTypes){
-    			final_query = query_submit.collection.toString();
-    			String query_json = null;
-    			try {
-    				query_json = query_submit.executeQuery(tabName);
-    			} catch (IllegalStateException | IOException e1) {
-    				e1.printStackTrace();
-    			}
-    			SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
-    			query_results_list.put(tabName, query_results);
-    	}// /for tabname in types of entities
-    	
-        //Get the facets
-        //getFacets(jh);
-        
-        //return ok("cool");
-        // TODO: fix this, too
-        //Form<FacetFormData> fd = Form.form(FacetFormData.class).fill(facet_form);
-        System.out.println("hierarchy postIndex() was called!");
-        return ok(hierarchy_faceting.render(query_results_list, final_query));
+        return ok(hierarchy_faceting.render(query_results_list, hierarchy_results_list, "All Documents"));
     }// /postIndex()
 
 }

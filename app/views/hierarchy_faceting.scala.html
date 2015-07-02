@@ -1,7 +1,9 @@
 @( documentMap : Map[String, models.SparqlQueryResults],
+   documentHierarchy: Map[String, String],
    final_query : String)
 
 @import helper._
+@import play.api.libs.json._
 
 @main("Hierarchy Faceted Search") {
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
@@ -16,6 +18,9 @@
 		    @for((thingType, query_results) <- documentMap) {
     		    <li><a data-toggle="tab" href="#@thingType">@thingType</a></li>
 		    }
+		    @for((thingType, hierarchy_results) <- documentHierarchy) {
+    		    <li><a data-toggle="tab" href="#@thingType">@thingType</a></li>
+		    }
 		  </ul>
           <div class="row placeholders"></div>
           <div class = "tab-content">
@@ -23,23 +28,6 @@
             
       			<div id="@thingType" class="tab-pane fade in">
       			    @thingType match{
-                        case "InstrumentModelsH" => {
-    				    <h2 class="sub-header">Results</h2>
-    					   <div class="table-responsive">
-    		
-							    <div id="body">
-      								<div id="footer">
-      								</div>
-    							</div>
-
-    							<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>
-					      		<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.js"></script>
-    							<script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.layout.js"></script>
-    							<script type="text/javascript" src="/assets/javascripts/treeRenderer.js"></script>  					   
-    							<link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>
-    					   
-    					   </div>
-					    } 
                         case "PlatformModels" => { 
                             <h2 class="sub-header">Platform Models</h2>
                             <div><p>(click for more information)</p></div>
@@ -128,6 +116,11 @@
       			            @metadata_table(query_results)
       				    }
       			    }
+      			</div>
+      		}
+      		@for((thingType, hierarchy_results) <- documentHierarchy) {
+      			<div id="@thingType" class="tab-pane fade in">
+  					@metadata_hierarchy(hierarchy_results)
       			</div>
       		}
           </div>
