@@ -1,27 +1,69 @@
-@( documentMap : String)
+@( documentMap : Map[String,models.SparqlQueryResults],
+   tree_json : String,
+   documentHierarchy: Map[String, String],
+   final_query : String)
 
 @import helper._
+@import play.api.libs.json._
 
 @main("Hierarchies") {
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
     <div class="container-fluid">
       
       <div class="row">
-        @*<div class="col-sm-9 col-md-10 main">*@
+        <div class="col-sm-9 col-md-10 main">
           <p>
 		  	 <button class="btn btn-primary" type="submit">Instrument<br>Hierarchy</button>
 		  	 <button class="btn btn-primary" type="submit">Detector<br>Hierarchy</button>
 		  	 <button class="btn btn-primary" type="submit">Entity<br>Hierarchy</button>
 		  	 <button class="btn btn-primary" type="submit">Characteristic<br>Hierarchy</button>
 		  </p>
-		  <div class="table-responsive">
-			 <div id="query" data-results="@documentMap"></div>
-			 <div id="body"></div>
-    		 @*<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>*@
-			 <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.js"></script>
-    		 <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.layout.js"></script>
-    		 <script type="text/javascript" src="/assets/javascripts/treeRenderer.js"></script>  					   
-    		 <link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>   					   
-    	  </div>
+        <ul class="nav nav-tabs">
+            <li><a data-toggle="tab" href="#InstrumentModels">View All Instrument Models</a></li>
+            <li><a data-toggle="tab" href="#Instruments">View All Instruments</a></li>
+            <li><a data-toggle="tab" href="#InstrumentH">View Models as Tree</a></li>
+        </ul>
+        <div class = "tab-content">
+        @for((thingType, query_results) <- documentMap) {
+            @thingType match{
+                case "InstrumentModels" => { 
+                    <div id="InstrumentModels" class="tab-pane fade in">
+                        <div><p>(click for more information)</p></div>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    @for(triple <- query_results.triples_list){
+                                        @instrument_model_entry(triple) 
+                                    }
+                                </div>
+                            </div>
+                }
+                case "Instruments" => { 
+                    <div id="Instruments" class="tab-pane fade in">
+                        <div><p>(click for more information)</p></div>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    @for(triple <- query_results.triples_list){
+                                        @instrument_entry(triple)
+                                    }
+                                </div>
+                        </div>
+                }
+                case "InstrumentH" => {
+                    <div id="InstrumentH" class="tab-pane fade in">
+                        <div id="query" data-results="@tree_json"></div>
+                        <div id="body"></div>
+                            @*<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>*@
+                            <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.js"></script>
+                            <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.layout.js"></script>
+                            <script type="text/javascript" src="/assets/javascripts/treeRenderer.js"></script>  					   
+                            <link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>   					   
+                    </div>
+                }
+                case _ => {
+                }
+            }
+        }
+        </div>
       </div>
     </div>
 

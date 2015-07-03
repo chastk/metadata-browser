@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1067fd7[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f2ae88[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.1] org.scala-lang#scala-library;2.11.1[0m
@@ -7934,7 +7934,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10044ms :: artifacts dl 208ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7812ms :: artifacts dl 338ms[0m
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT compile produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT runtime produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT test produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-test.xml[0m
@@ -7949,5 +7949,5 @@
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT pom produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT scala-tool produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for spatial-facet#spatial-facet_2.11;1.0-SNAPSHOT fork-run produced in /home/tetherless/metadata-browser/target/resolution-cache/reports/spatial-facet-spatial-facet_2.11-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (10044ms resolve - 208ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (7812ms resolve - 338ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

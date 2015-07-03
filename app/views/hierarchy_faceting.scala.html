@@ -102,12 +102,14 @@
                             <h2 class="sub-header">Detectors</h2>
                             <div><p>(click for more information)</p></div>
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
                                         @for(triple <- query_results.triples_list){
                                             @if(triple.resultType == "Detectors"){
                                                 @detector_entry(triple) 
                                             }
                                         }
                                 </div>
+                            </div>
                         }
 					    case _ =>{
       			            @metadata_table(query_results)

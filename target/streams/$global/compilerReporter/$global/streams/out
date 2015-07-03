@@ -1,4 +1,4 @@
-[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/controllers/Detector.java:53: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   variable query_json[0m
-[0m[[31merror[0m] [0m  location: class controllers.Detector[0m
-[0m[[31merror[0m] [0mquery_json[0m
+[0m[[33mwarn[0m] [0m/home/tetherless/metadata-browser/app/views/detector_browser.scala.html:39: unreachable code[0m
+[0m[[33mwarn[0m] [0m                    <div id="Detectors" class="tab-pane fade in">[0m
+[0m[[33mwarn[0m] [0m       ^[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
