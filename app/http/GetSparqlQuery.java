@@ -201,6 +201,7 @@ public class GetSparqlQuery {
                     "}";
                 break;
             case "InstrumentModelsH" : 
+                System.out.println("Someone wants the insturment models!");
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
                 	"SELECT ?modelName ?superModelName WHERE { " + 
@@ -237,13 +238,14 @@ public class GetSparqlQuery {
         Scanner in = null;
         try {
         	HttpClient client = new DefaultHttpClient();
+        	System.out.println(tab + " : " + list_of_queries.get(tab));
         	HttpGet request = new HttpGet(list_of_queries.get(tab).toString().replace(" ", "%20"));
-        	//System.out.println(tab + " : " + list_of_queries.get(tab));
+        	//System.out.println(tab + " : " + request);
         	request.setHeader("Accept", "application/sparql-results+json");
         	HttpResponse response = client.execute(request);
             StringWriter writer = new StringWriter();
             IOUtils.copy(response.getEntity().getContent(), writer, "utf-8");
-            //System.out.println("response: " + response);   
+            System.out.println("response: " + response);   
             return writer.toString();
             
         } finally

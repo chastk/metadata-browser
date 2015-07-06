@@ -1,12 +1,11 @@
 @( documentMap : Map[String,models.SparqlQueryResults],
-   tree_json : String,
-   documentHierarchy: Map[String, String],
+   documentHierarchy: Map[String,String],
    final_query : String)
 
 @import helper._
 @import play.api.libs.json._
 
-@main("Hierarchies") {
+@main("Browse Instrument") {
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
     <div class="container-fluid">
       
@@ -21,7 +20,7 @@
         <ul class="nav nav-tabs">
             <li><a data-toggle="tab" href="#InstrumentModels">View All Instrument Models</a></li>
             <li><a data-toggle="tab" href="#Instruments">View All Instruments</a></li>
-            <li><a data-toggle="tab" href="#InstrumentH">View Models as Tree</a></li>
+            <li><a data-toggle="tab" href="#InstrumentModelsH">View Models as Tree</a></li>
         </ul>
         <div class = "tab-content">
         @for((thingType, query_results) <- documentMap) {
@@ -36,6 +35,7 @@
                                     }
                                 </div>
                             </div>
+                    </div>
                 }
                 case "Instruments" => { 
                     <div id="Instruments" class="tab-pane fade in">
@@ -46,22 +46,17 @@
                                         @instrument_entry(triple)
                                     }
                                 </div>
-                        </div>
-                }
-                case "InstrumentH" => {
-                    <div id="InstrumentH" class="tab-pane fade in">
-                        <div id="query" data-results="@tree_json"></div>
-                        <div id="body"></div>
-                            @*<link type="text/css" rel="stylesheet" href="http://mbostock.github.io/d3/talk/20111018/style.css"/>*@
-                            <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.js"></script>
-                            <script type="text/javascript" src="http://mbostock.github.io/d3/talk/20111018/d3/d3.layout.js"></script>
-                            <script type="text/javascript" src="/assets/javascripts/treeRenderer.js"></script>  					   
-                            <link type="text/css" rel="stylesheet" href="/assets/stylesheets/treeRenderer.css"/>   					   
+                            </div>
                     </div>
                 }
                 case _ => {
                 }
             }
+        }
+        @for((thingType, tree_results) <- documentHierarchy){
+                <div id="@thingType" class="tab-pane fade in">
+                    @metadata_hierarchy(tree_results)
+                </div>
         }
         </div>
       </div>
