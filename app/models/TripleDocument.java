@@ -17,10 +17,11 @@ public class TripleDocument{
 	    this.numVars = vars.size();
 	    String variable;
 	    for( int i = 0; i < this.numVars; i++){
-	        variable = "none";
+	        variable = "";
 	        try {
 	            if(node.get(vars.get(i)).hasNonNull("value"))
 	                variable = node.get(vars.get(i)).get("value").asText();
+	                //System.out.println("read: " + vars.get(i) + " = " + variable);
 	        } catch (NullPointerException e){
 	            if(vars.get(i).equals("sn")) {
 	                variable = generateID();

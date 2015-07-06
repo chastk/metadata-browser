@@ -62,7 +62,7 @@
                                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         @for(triple <- query_results.triples_list){
-                                            @if(triple.resultType == "InstrumentModels"){
+                                            @if(triple.resultType == "detectorsModels"){
                                                 @instrument_model_entry(triple) 
                                             }
                                         }
@@ -108,9 +108,8 @@
                                                 @detector_entry(triple) 
                                             }
                                         }
-                
-                                    </div>
                                 </div>
+                            </div>
                         }
 					    case _ =>{
       			            @metadata_table(query_results)

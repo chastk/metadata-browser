@@ -1,3 +1,6 @@
+var query_res = document.getElementById('query');
+var results = query_res.dataset.results;
+
 var m = [20, 120, 20, 120],
     w = 1280 - m[1] - m[3],
     h = 800 - m[0] - m[2],
@@ -16,8 +19,9 @@ var vis = d3.select("#body").append("svg:svg")
   .append("svg:g")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.json("http://mbostock.github.io/d3/talk/20111018/flare.json", function(json) {
-  root = json;
+//d3.json("http://mbostock.github.io/d3/talk/20111018/flare.json", function(json) {
+//alert(results);
+  root = JSON.parse(results);
   root.x0 = h / 2;
   root.y0 = 0;
 
@@ -29,14 +33,14 @@ d3.json("http://mbostock.github.io/d3/talk/20111018/flare.json", function(json) 
   }
 
   // Initialize the display to show a few nodes.
-  root.children.forEach(toggleAll);
-  toggle(root.children[1]);
-  toggle(root.children[1].children[2]);
-  toggle(root.children[9]);
-  toggle(root.children[9].children[0]);
+  //root.children.forEach(toggleAll);
+  //toggle(root.children[1]);
+  //toggle(root.children[1].children[2]);
+  //toggle(root.children[9]);
+  //toggle(root.children[9].children[0]);
 
   update(root);
-});
+//});
 
 function update(source) {
   var duration = d3.event && d3.event.altKey ? 5000 : 500;
@@ -138,8 +142,6 @@ function toggle(d) {
     d._children = null;
   }
 }
-
-document.getElementById("test1").innerHTML = "GRAPH TEST 1";
 
 
 

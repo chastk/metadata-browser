@@ -1,2 +1,10 @@
-[0m[[0minfo[0m] [0m/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: /home/tetherless/metadata-browser/app/http/GetSparqlQuery.java uses or overrides a deprecated API.[0m
-[0m[[0minfo[0m] [0m/home/tetherless/metadata-browser/app/http/GetSparqlQuery.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:21: illegal character '\u0001'[0m
+[0m[[31merror[0m] [0m		    @for((thingType, ) <- documentHierarchy) {[0m
+[0m[[31merror[0m] [0m		                     ^[0m
+[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:21: illegal character '\u0001'[0m
+[0m[[31merror[0m] [0m		    @for((thingType, ) <- documentHierarchy) {[0m
+[0m[[31merror[0m] [0m		                      ^[0m
+[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:130: ')' expected but '}' found.[0m
+[0m[[31merror[0m] [0m}[0m
+[0m[[31merror[0m] [0m ^[0m
+[0m[[31merror[0m] [0mthree errors found[0m

@@ -29,16 +29,18 @@ object detector_entry extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Append
 Seq[Any](format.raw/*1.34*/("""
 
 """),_display_(/*3.2*/defining(triple.get("sn"))/*3.28*/ {itemID =>_display_(Seq[Any](format.raw/*3.39*/("""
-"""),format.raw/*4.1*/("""<div class="panel-heading" role="tab" id="heading"""),_display_(/*4.51*/itemID),format.raw/*4.57*/("""">
-    <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#"""),_display_(/*6.100*/itemID),format.raw/*6.106*/("""" aria-expanded="false" aria-controls=""""),_display_(/*6.146*/itemID),format.raw/*6.152*/("""">
-            """),_display_(/*7.14*/triple/*7.20*/.get("detName")),format.raw/*7.35*/("""</a></h4>
-        
-</div>
-<div id=""""),_display_(/*10.11*/itemID),format.raw/*10.17*/("""" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading"""),_display_(/*10.92*/itemID),format.raw/*10.98*/("""">
-    <div class="panel-body">
-        <p><b>"""),_display_(/*12.16*/triple/*12.22*/.get("detName")),format.raw/*12.37*/(""" """),format.raw/*12.38*/("""</b> (type: """),_display_(/*12.51*/triple/*12.57*/.get("detModelName")),format.raw/*12.77*/(""" """),format.raw/*12.78*/(""")</p>
-        <p>serial number """),_display_(/*13.27*/itemID),format.raw/*13.33*/("""</p>
+"""),format.raw/*4.1*/("""<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading"""),_display_(/*5.55*/itemID),format.raw/*5.61*/("""">
+        <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#"""),_display_(/*7.104*/itemID),format.raw/*7.110*/("""" aria-expanded="false" aria-controls=""""),_display_(/*7.150*/itemID),format.raw/*7.156*/("""">
+                """),_display_(/*8.18*/triple/*8.24*/.get("detName")),format.raw/*8.39*/("""</a></h4>
+            
+    </div>
+    <div id=""""),_display_(/*11.15*/itemID),format.raw/*11.21*/("""" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading"""),_display_(/*11.96*/itemID),format.raw/*11.102*/("""">
+        <div class="panel-body">
+            <p><b>"""),_display_(/*13.20*/triple/*13.26*/.get("detName")),format.raw/*13.41*/(""" """),format.raw/*13.42*/("""</b> (type: """),_display_(/*13.55*/triple/*13.61*/.get("detModelName")),format.raw/*13.81*/(""" """),format.raw/*13.82*/(""")</p>
+            <p>serial number """),_display_(/*14.31*/itemID),format.raw/*14.37*/("""</p>
+        </div>
     </div>
 </div>
 """)))}))}
@@ -53,11 +55,11 @@ Seq[Any](format.raw/*1.34*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Jul 02 12:57:31 EDT 2015
+                  DATE: Thu Jul 02 17:34:36 EDT 2015
                   SOURCE: /home/tetherless/metadata-browser/app/views/detector_entry.scala.html
-                  HASH: ed89ad4164a8d93760e33b3230705a676e971cee
-                  MATRIX: 747->1|867->33|895->36|929->62|977->73|1004->74|1080->124|1106->130|1264->261|1291->267|1358->307|1385->313|1427->329|1441->335|1476->350|1539->386|1566->392|1668->467|1695->473|1769->520|1784->526|1820->541|1849->542|1889->555|1904->561|1945->581|1974->582|2033->614|2060->620
-                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|32->4|32->4|34->6|34->6|34->6|34->6|35->7|35->7|35->7|38->10|38->10|38->10|38->10|40->12|40->12|40->12|40->12|40->12|40->12|40->12|40->12|41->13|41->13
+                  HASH: 05798c3ab9d11091f59c65228f2dec71b4d49b0c
+                  MATRIX: 747->1|867->33|895->36|929->62|977->73|1004->74|1118->162|1144->168|1310->307|1337->313|1404->353|1431->359|1477->379|1491->385|1526->400|1601->448|1628->454|1730->529|1758->535|1840->590|1855->596|1891->611|1920->612|1960->625|1975->631|2016->651|2045->652|2108->688|2135->694
+                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4|33->5|33->5|35->7|35->7|35->7|35->7|36->8|36->8|36->8|39->11|39->11|39->11|39->11|41->13|41->13|41->13|41->13|41->13|41->13|41->13|41->13|42->14|42->14
                   -- GENERATED --
               */
           

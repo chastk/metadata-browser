@@ -1,28 +1,34 @@
 // @SOURCE:/home/tetherless/metadata-browser/conf/routes
-// @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Wed Jul 01 19:18:31 EDT 2015
+// @HASH:0f8e3c23b1791dbb6233c1dc95f3ea2f3acf86ab
+// @DATE:Thu Jul 02 20:56:14 EDT 2015
 
 package controllers;
 
 public class routes {
-public static final controllers.ReverseSpatial Spatial = new controllers.ReverseSpatial();
 public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets();
+public static final controllers.ReverseDetector Detector = new controllers.ReverseDetector();
 public static final controllers.ReverseHierarchy Hierarchy = new controllers.ReverseHierarchy();
+public static final controllers.ReverseSpatial Spatial = new controllers.ReverseSpatial();
 public static final controllers.ReverseApplication Application = new controllers.ReverseApplication();
+public static final controllers.ReverseInstrument Instrument = new controllers.ReverseInstrument();
 
 public static class javascript {
-public static final controllers.javascript.ReverseSpatial Spatial = new controllers.javascript.ReverseSpatial();
 public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets();
+public static final controllers.javascript.ReverseDetector Detector = new controllers.javascript.ReverseDetector();
 public static final controllers.javascript.ReverseHierarchy Hierarchy = new controllers.javascript.ReverseHierarchy();
+public static final controllers.javascript.ReverseSpatial Spatial = new controllers.javascript.ReverseSpatial();
 public static final controllers.javascript.ReverseApplication Application = new controllers.javascript.ReverseApplication();
+public static final controllers.javascript.ReverseInstrument Instrument = new controllers.javascript.ReverseInstrument();
 }
           
 
 public static class ref {
-public static final controllers.ref.ReverseSpatial Spatial = new controllers.ref.ReverseSpatial();
 public static final controllers.ref.ReverseAssets Assets = new controllers.ref.ReverseAssets();
+public static final controllers.ref.ReverseDetector Detector = new controllers.ref.ReverseDetector();
 public static final controllers.ref.ReverseHierarchy Hierarchy = new controllers.ref.ReverseHierarchy();
+public static final controllers.ref.ReverseSpatial Spatial = new controllers.ref.ReverseSpatial();
 public static final controllers.ref.ReverseApplication Application = new controllers.ref.ReverseApplication();
+public static final controllers.ref.ReverseInstrument Instrument = new controllers.ref.ReverseInstrument();
 }
           
 }

@@ -1,0 +1,59 @@
+@( documentMap : Map[String, models.SparqlQueryResults],
+   documentHierarchy: Map[String, String],
+   final_query : String)
+
+@import helper._
+@import play.api.libs.json._
+
+@main("Browse Detectors") {
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col-sm-9 col-md-10 main">
+
+		<div class="row placeholders"></div>
+        <h1 class="page-header">Jefferson Project Detectors</h1>
+		<div class="row placeholders"></div>
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#DetectorModels">View All Detector Models</a></li>
+                <li><a data-toggle="tab" href="#Detectors">View All Detectors</a></li>
+                <li><a data-toggle="tab" href="#DetectorsH">View Models as Tree</a></li>
+            </ul>
+        <div class="row placeholders"></div>
+        <div class = "tab-content">
+        @for((thingType, query_results) <- documentMap) {
+		    @thingType match{
+                case "DetectorModels" => { 
+                    <div id="DetectorModels" class="tab-pane fade in">
+                        <div><p>(click for more information)</p></div>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                @for(triple <- query_results.triples_list){
+                                    @detector_model_entry(triple)
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+                case "Detectors" => { 
+                    <div id="Detectors" class="tab-pane fade in">
+                        <div><p>(click for more information)</p></div>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">                                    
+                                @for(triple <- query_results.triples_list){
+                                    @detector_entry(triple)
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+                case _ =>{
+                    
+                }
+            }
+        }
+        </div>
+        </div>
+        </div>
+}

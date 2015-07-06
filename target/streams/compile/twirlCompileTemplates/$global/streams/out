@@ -1,3 +1,3 @@
-[0m[[31merror[0m] [0m/home/oneironym/jp/metadata-browser/app/views/platform_table.scala.html:14: Expected ')' but found 'EOF'[0m
-[0m[[31merror[0m] [0m        </div>[0m
-[0m[[31merror[0m] [0m              ^[0m
+[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/instrument_browser.scala.html:69: Not parsed?[0m
+[0m[[31merror[0m] [0m}[0m
+[0m[[31merror[0m] [0m^[0m

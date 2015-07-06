@@ -1,6 +1,6 @@
 // @SOURCE:/home/tetherless/metadata-browser/conf/routes
-// @HASH:aa30437e014770dd6976a35df8006ce04ca12b5a
-// @DATE:Wed Jul 01 19:18:31 EDT 2015
+// @HASH:0f8e3c23b1791dbb6233c1dc95f3ea2f3acf86ab
+// @DATE:Thu Jul 02 20:56:14 EDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,8 +15,11 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:16
+// @LINE:21
+// @LINE:18
+// @LINE:14
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -25,36 +28,36 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:9
-// @LINE:8
-class ReverseSpatial {
+// @LINE:21
+class ReverseAssets {
 
 
-// @LINE:9
-def postIndex(): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "spatial")
-}
-                        
-
-// @LINE:8
-def index(): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "spatial")
+// @LINE:21
+def at(file:String): Call = {
+   implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
+   Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
                         
 
 }
                           
 
-// @LINE:16
-class ReverseAssets {
+// @LINE:13
+// @LINE:12
+class ReverseDetector {
 
 
-// @LINE:16
-def at(file:String): Call = {
-   implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
-   Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
+// @LINE:13
+def postIndex(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "detectors")
+}
+                        
+
+// @LINE:12
+def index(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "detectors")
 }
                         
 
@@ -83,7 +86,29 @@ def index(): Call = {
 }
                           
 
-// @LINE:13
+// @LINE:9
+// @LINE:8
+class ReverseSpatial {
+
+
+// @LINE:9
+def postIndex(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "spatial")
+}
+                        
+
+// @LINE:8
+def index(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "spatial")
+}
+                        
+
+}
+                          
+
+// @LINE:18
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -103,10 +128,24 @@ def index(): Call = {
 }
                         
 
-// @LINE:13
+// @LINE:18
 def login(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "login")
+}
+                        
+
+}
+                          
+
+// @LINE:14
+class ReverseInstrument {
+
+
+// @LINE:14
+def index(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "instruments")
 }
                         
 
@@ -116,8 +155,11 @@ def login(): Call = {
                   
 
 
-// @LINE:16
+// @LINE:21
+// @LINE:18
+// @LINE:14
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -127,28 +169,16 @@ def login(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:9
-// @LINE:8
-class ReverseSpatial {
+// @LINE:21
+class ReverseAssets {
 
 
-// @LINE:9
-def postIndex : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Spatial.postIndex",
+// @LINE:21
+def at : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Assets.at",
    """
-      function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "spatial"})
-      }
-   """
-)
-                        
-
-// @LINE:8
-def index : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Spatial.index",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "spatial"})
+      function(file) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file)})
       }
    """
 )
@@ -157,16 +187,28 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:16
-class ReverseAssets {
+// @LINE:13
+// @LINE:12
+class ReverseDetector {
 
 
-// @LINE:16
-def at : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Assets.at",
+// @LINE:13
+def postIndex : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Detector.postIndex",
    """
-      function(file) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file)})
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "detectors"})
+      }
+   """
+)
+                        
+
+// @LINE:12
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Detector.index",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "detectors"})
       }
    """
 )
@@ -205,7 +247,37 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:13
+// @LINE:9
+// @LINE:8
+class ReverseSpatial {
+
+
+// @LINE:9
+def postIndex : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Spatial.postIndex",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "spatial"})
+      }
+   """
+)
+                        
+
+// @LINE:8
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Spatial.index",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "spatial"})
+      }
+   """
+)
+                        
+
+}
+              
+
+// @LINE:18
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -233,7 +305,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:13
+// @LINE:18
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.login",
    """
@@ -246,12 +318,33 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 
 }
               
+
+// @LINE:14
+class ReverseInstrument {
+
+
+// @LINE:14
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Instrument.index",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "instruments"})
+      }
+   """
+)
+                        
+
+}
+              
 }
         
 
 
-// @LINE:16
+// @LINE:21
+// @LINE:18
+// @LINE:14
 // @LINE:13
+// @LINE:12
 // @LINE:11
 // @LINE:10
 // @LINE:9
@@ -261,33 +354,33 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:9
-// @LINE:8
-class ReverseSpatial {
+// @LINE:21
+class ReverseAssets {
 
 
-// @LINE:9
-def postIndex(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Spatial.postIndex(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Spatial", "postIndex", Seq(), "POST", """""", _prefix + """spatial""")
-)
-                      
-
-// @LINE:8
-def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Spatial.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Spatial", "index", Seq(), "GET", """""", _prefix + """spatial""")
+// @LINE:21
+def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
                       
 
 }
                           
 
-// @LINE:16
-class ReverseAssets {
+// @LINE:13
+// @LINE:12
+class ReverseDetector {
 
 
-// @LINE:16
-def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
+// @LINE:13
+def postIndex(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Detector.postIndex(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Detector", "postIndex", Seq(), "POST", """""", _prefix + """detectors""")
+)
+                      
+
+// @LINE:12
+def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Detector.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Detector", "index", Seq(), "GET", """""", _prefix + """detectors""")
 )
                       
 
@@ -314,7 +407,27 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:13
+// @LINE:9
+// @LINE:8
+class ReverseSpatial {
+
+
+// @LINE:9
+def postIndex(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Spatial.postIndex(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Spatial", "postIndex", Seq(), "POST", """""", _prefix + """spatial""")
+)
+                      
+
+// @LINE:8
+def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Spatial.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Spatial", "index", Seq(), "GET", """""", _prefix + """spatial""")
+)
+                      
+
+}
+                          
+
+// @LINE:18
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -332,9 +445,22 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:13
+// @LINE:18
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.login(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "login", Seq(), "POST", """""", _prefix + """login""")
+)
+                      
+
+}
+                          
+
+// @LINE:14
+class ReverseInstrument {
+
+
+// @LINE:14
+def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Instrument.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Instrument", "index", Seq(), "GET", """""", _prefix + """instruments""")
 )
                       
 
