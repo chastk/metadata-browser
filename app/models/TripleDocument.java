@@ -40,6 +40,13 @@ public class TripleDocument{
 	public String get(String key){
 	    return this.items.get(key);
 	}
+	
+	public boolean has(String key){
+	    boolean b = false;
+	    if(this.items.get(key) != null)
+	        b = true;
+	    return b;
+	}
 
     // The accordion menus for results are composed of two div elements
     //   that must have corresponding names that are unique for each entry.

@@ -11,13 +11,14 @@ import java.util.TreeMap;
 import models.FacetsWithCategories;
 import models.SparqlQuery;
 import models.SparqlQueryResults;
-import models.TreeQuery;
+import models.TreeQueryResults;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.formdata.FacetFormData;
 import views.html.detector_browser;
+import views.html.error_page;
 
 
 public class Detector extends Controller {
@@ -29,21 +30,29 @@ public class Detector extends Controller {
     	//Get query using http.GetSparqlQuery
         SparqlQuery query = new SparqlQuery();
         GetSparqlQuery query_submit = new GetSparqlQuery(query);
+        String[] tabsToQuery = {"Detectors", "DetectorModels"}; 
 
         TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();
         TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();
         // This needs to be fixed to handle the tree rendering for Detectors!
         for (String tabName : query_submit.thingTypes){
+            String query_json = null;
             if (tabName.endsWith("H")) {
-                System.out.println("Detector.java is requesting: " + tabName);
-                TreeQuery tq = new TreeQuery(tabName);
-                hierarchy_results_list.put(tabName, tq.getQueryResult().replace("\n", " "));
-            } else {
-                String query_json = null;
+                System.out.println("Instrument.java is requesting: " + tabName);
                 try {
                     query_json = query_submit.executeQuery(tabName);
                 } catch (IllegalStateException | IOException e1) {
-                    e1.printStackTrace();
+                    return notFound(error_page.render(e1.toString()));
+                    //e1.printStackTrace();
+                }
+                TreeQueryResults query_results = new TreeQueryResults(query_json, tabName);
+                hierarchy_results_list.put(tabName, query_results.getQueryResult().replace("\n", " "));
+            } else {
+                try {
+                    query_json = query_submit.executeQuery(tabName);
+                } catch (IllegalStateException | IOException e1) {
+                    return notFound(error_page.render(e1.toString()));
+                    //e1.printStackTrace();
                 }
                 //System.out.println(query_json);
                 SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);
@@ -71,16 +80,23 @@ public class Detector extends Controller {
         TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();
     	String final_query = null;
         for (String tabName : query_submit.thingTypes){
+            String query_json = null;
             if (tabName.endsWith("H")) {
-                System.out.println("Detector.java is requesting: " + tabName);
-                TreeQuery tq = new TreeQuery(tabName);
-                hierarchy_results_list.put(tabName, tq.getQueryResult().replace("\n", " "));
-            } else {
-                String query_json = null;
+                System.out.println("Instrument.java is requesting: " + tabName);
                 try {
                     query_json = query_submit.executeQuery(tabName);
                 } catch (IllegalStateException | IOException e1) {
-                    e1.printStackTrace();
+                    return notFound(error_page.render(e1.toString()));
+                    //e1.printStackTrace();
+                }
+                TreeQueryResults query_results = new TreeQueryResults(query_json, tabName);
+                hierarchy_results_list.put(tabName, query_results.getQueryResult().replace("\n", " "));
+            } else {
+                try {
+                    query_json = query_submit.executeQuery(tabName);
+                } catch (IllegalStateException | IOException e1) {
+                    return notFound(error_page.render(e1.toString()));
+                    //e1.printStackTrace();
                 }
                 //System.out.println(query_json);
                 SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);

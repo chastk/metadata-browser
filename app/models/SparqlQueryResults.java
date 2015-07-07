@@ -24,7 +24,7 @@ public class SparqlQueryResults extends QueryResults {
     //  http://www.w3.org/TR/sparql11-results-json/ 
     public SparqlQueryResults (String json, String tabName) {
         this.json = json;
-        //if(tabName.equals("Detectors")) System.out.println(json);
+        if(tabName.equals("InstrumentModels")) System.out.println(json);
         // create an ObjectMapper instance.
         ObjectMapper mapper = new ObjectMapper();
         // use the ObjectMapper to read the json string and create a tree
@@ -57,7 +57,7 @@ public class SparqlQueryResults extends QueryResults {
 		    while (parseResults.hasNext()){
 				JsonNode doc = parseResults.next();
 				TripleDocument triple = new TripleDocument(doc, vars, tabName);
-				System.out.println(triple);
+				//System.out.println(triple);
 				triples_list.add(triple);
 			}
 			//System.out.println(the_docs.size());

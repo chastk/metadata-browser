@@ -1,13 +1,13 @@
-New log file opened at Mon Jul 06 14:39:01 EDT 2015 by 5409@tetherless-ThinkPad-T61p
-Taking next connection to: 33992
-New client attempting to connect on port: 54029-33992
-  Address = /127.0.1.1:33992
-This client on port 54029 has uuid 1f39d9ab-0bd3-4cfd-acea-564f2a5ffa1a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-1f39d9ab-0bd3-4cfd-acea-564f2a5ffa1a
-Taking next connection to: 33992
-New client attempting to connect on port: 54030-33992
-  Address = /127.0.1.1:33992
-Handshake exception on socket: 54030
+New log file opened at Tue Jul 07 09:55:56 EDT 2015 by 3693@tetherless-ThinkPad-T61p
+Taking next connection to: 35404
+New client attempting to connect on port: 33854-35404
+  Address = /127.0.1.1:35404
+This client on port 33854 has uuid 7ff9428b-fdad-4b20-94d2-109181439fa9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7ff9428b-fdad-4b20-94d2-109181439fa9
+Taking next connection to: 35404
+New client attempting to connect on port: 33855-35404
+  Address = /127.0.1.1:35404
+Handshake exception on socket: 33855
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,37 +17,82 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 33992
-New client attempting to connect on port: 54031-33992
-  Address = /127.0.1.1:33992
-This client on port 54031 has uuid 08970848-26e8-49f5-8984-959691687dc8 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-1f39d9ab-0bd3-4cfd-acea-564f2a5ffa1a, activator-08970848-26e8-49f5-8984-959691687dc8
-Taking next connection to: 33992
-New client attempting to connect on port: 54039-33992
-  Address = /127.0.1.1:33992
-Handshake exception on socket: 54039
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 33992
-New client attempting to connect on port: 54040-33992
-  Address = /127.0.1.1:33992
-This client on port 54040 has uuid 60d4c223-10e5-497c-b30b-d21124a0103b configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-08970848-26e8-49f5-8984-959691687dc8, play-fork-run-60d4c223-10e5-497c-b30b-d21124a0103b
-Taking next connection to: 33992
+Taking next connection to: 35404
+New client attempting to connect on port: 33856-35404
+  Address = /127.0.1.1:35404
+This client on port 33856 has uuid 48ac515b-3c4c-4e35-b93f-8b8082cc8025 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7ff9428b-fdad-4b20-94d2-109181439fa9, activator-48ac515b-3c4c-4e35-b93f-8b8082cc8025
+Taking next connection to: 35404
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 33992
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+New client attempting to connect on port: 34291-35404
+  Address = /127.0.1.1:35404
+Handshake exception on socket: 34291
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 35404
+New client attempting to connect on port: 34292-35404
+  Address = /127.0.1.1:35404
+This client on port 34292 has uuid 7e7d7bef-b003-4d55-8b91-6f048b36ae1e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-48ac515b-3c4c-4e35-b93f-8b8082cc8025, play-fork-run-7e7d7bef-b003-4d55-8b91-6f048b36ae1e
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 35404
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
-1 daemon clients are connected.
 Server socket thread exiting.
-1 clients open, will close them...
+0 clients open, will close them...
 All client sockets have been closed.
-Closing the 5409@tetherless-ThinkPad-T61p logs at Mon Jul 06 14:45:33 EDT 2015, goodbye.
+Closing the 3693@tetherless-ThinkPad-T61p logs at Tue Jul 07 10:47:00 EDT 2015, goodbye.

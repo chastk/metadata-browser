@@ -88,7 +88,7 @@ public class GetSparqlQuery {
             e.printStackTrace();
         }
             
-        //System.out.println(tabName + " : " + this.sparql_query);
+        System.out.println(tabName + " : " + this.sparql_query);
         this.list_of_queries.put(tabName, this.sparql_query);
     }// /getSolrQuery for SPARQL
 
@@ -153,13 +153,15 @@ public class GetSparqlQuery {
                 break;
             case "InstrumentModels" : 
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
+                    "PREFIX foaf:<http://xmlns.com/foaf/0.1/>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
                     "PREFIX vstoi: <http://jefferson.tw.rpi.edu/ontology/vstoi#>" +
                     "SELECT ?instModelName ?maker ?desc WHERE {" +
                     "    ?instModel rdfs:subClassOf+" + 
                     "    <http://jefferson.tw.rpi.edu/ontology/vstoi#Instrument>  ." + 
                     "    ?instModel rdfs:label ?instModelName ." + 
-                    "    ?instModel vstoi:hasMaker ?maker ." + 
+                    "    ?instModel vstoi:hasMaker ?m ." +
+                    "    OPTIONAL { ?m foaf:name ?maker } ." +
                     "    ?instModel rdfs:comment ?desc ." + 
                     "}";
                 break;
@@ -201,7 +203,6 @@ public class GetSparqlQuery {
                     "}";
                 break;
             case "InstrumentModelsH" : 
-                System.out.println("Someone wants the insturment models!");
                 q = "PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>" + 
                     "PREFIX owl: <http://www.w3.org/2002/07/owl#>" + 
                 	"SELECT ?modelName ?superModelName WHERE { " + 
@@ -238,14 +239,14 @@ public class GetSparqlQuery {
         Scanner in = null;
         try {
         	HttpClient client = new DefaultHttpClient();
-        	System.out.println(tab + " : " + list_of_queries.get(tab));
+        	//System.out.println(tab + " : " + list_of_queries.get(tab));
         	HttpGet request = new HttpGet(list_of_queries.get(tab).toString().replace(" ", "%20"));
         	//System.out.println(tab + " : " + request);
         	request.setHeader("Accept", "application/sparql-results+json");
         	HttpResponse response = client.execute(request);
             StringWriter writer = new StringWriter();
             IOUtils.copy(response.getEntity().getContent(), writer, "utf-8");
-            System.out.println("response: " + response);   
+            //System.out.println("response: " + response);   
             return writer.toString();
             
         } finally

@@ -1,6 +1,6 @@
 // @SOURCE:/home/tetherless/metadata-browser/conf/routes
-// @HASH:0f8e3c23b1791dbb6233c1dc95f3ea2f3acf86ab
-// @DATE:Thu Jul 02 20:56:14 EDT 2015
+// @HASH:b4dab174a50b2e96363b8fb6026d35330129349c
+// @DATE:Mon Jul 06 15:22:17 EDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,8 +15,11 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:21
-// @LINE:18
+// @LINE:23
+// @LINE:20
+// @LINE:17
+// @LINE:16
+// @LINE:15
 // @LINE:14
 // @LINE:13
 // @LINE:12
@@ -28,11 +31,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:21
+// @LINE:23
 class ReverseAssets {
 
 
-// @LINE:21
+// @LINE:23
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -86,6 +89,28 @@ def index(): Call = {
 }
                           
 
+// @LINE:17
+// @LINE:16
+class ReverseEntity {
+
+
+// @LINE:17
+def postIndex(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "entities")
+}
+                        
+
+// @LINE:16
+def index(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "entities")
+}
+                        
+
+}
+                          
+
 // @LINE:9
 // @LINE:8
 class ReverseSpatial {
@@ -108,7 +133,7 @@ def index(): Call = {
 }
                           
 
-// @LINE:18
+// @LINE:20
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -128,7 +153,7 @@ def index(): Call = {
 }
                         
 
-// @LINE:18
+// @LINE:20
 def login(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "login")
@@ -138,9 +163,17 @@ def login(): Call = {
 }
                           
 
+// @LINE:15
 // @LINE:14
 class ReverseInstrument {
 
+
+// @LINE:15
+def postIndex(): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "instruments")
+}
+                        
 
 // @LINE:14
 def index(): Call = {
@@ -155,8 +188,11 @@ def index(): Call = {
                   
 
 
-// @LINE:21
-// @LINE:18
+// @LINE:23
+// @LINE:20
+// @LINE:17
+// @LINE:16
+// @LINE:15
 // @LINE:14
 // @LINE:13
 // @LINE:12
@@ -169,11 +205,11 @@ def index(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:21
+// @LINE:23
 class ReverseAssets {
 
 
-// @LINE:21
+// @LINE:23
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -247,6 +283,36 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:17
+// @LINE:16
+class ReverseEntity {
+
+
+// @LINE:17
+def postIndex : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Entity.postIndex",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "entities"})
+      }
+   """
+)
+                        
+
+// @LINE:16
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Entity.index",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "entities"})
+      }
+   """
+)
+                        
+
+}
+              
+
 // @LINE:9
 // @LINE:8
 class ReverseSpatial {
@@ -277,7 +343,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:18
+// @LINE:20
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -305,7 +371,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:18
+// @LINE:20
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.login",
    """
@@ -319,9 +385,21 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:15
 // @LINE:14
 class ReverseInstrument {
 
+
+// @LINE:15
+def postIndex : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Instrument.postIndex",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "instruments"})
+      }
+   """
+)
+                        
 
 // @LINE:14
 def index : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -340,8 +418,11 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:21
-// @LINE:18
+// @LINE:23
+// @LINE:20
+// @LINE:17
+// @LINE:16
+// @LINE:15
 // @LINE:14
 // @LINE:13
 // @LINE:12
@@ -354,11 +435,11 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:21
+// @LINE:23
 class ReverseAssets {
 
 
-// @LINE:21
+// @LINE:23
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -407,6 +488,26 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:17
+// @LINE:16
+class ReverseEntity {
+
+
+// @LINE:17
+def postIndex(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Entity.postIndex(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Entity", "postIndex", Seq(), "POST", """""", _prefix + """entities""")
+)
+                      
+
+// @LINE:16
+def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Entity.index(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Entity", "index", Seq(), "GET", """""", _prefix + """entities""")
+)
+                      
+
+}
+                          
+
 // @LINE:9
 // @LINE:8
 class ReverseSpatial {
@@ -427,7 +528,7 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:18
+// @LINE:20
 // @LINE:7
 // @LINE:6
 class ReverseApplication {
@@ -445,7 +546,7 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:18
+// @LINE:20
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.login(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "login", Seq(), "POST", """""", _prefix + """login""")
 )
@@ -454,9 +555,16 @@ def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:15
 // @LINE:14
 class ReverseInstrument {
 
+
+// @LINE:15
+def postIndex(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Instrument.postIndex(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Instrument", "postIndex", Seq(), "POST", """""", _prefix + """instruments""")
+)
+                      
 
 // @LINE:14
 def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(

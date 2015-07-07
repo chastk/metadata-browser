@@ -12,7 +12,9 @@ POST	/metadata					controllers.Hierarchy.postIndex()
 GET		/detectors   				controllers.Detector.index()
 POST	/detectors 	    			controllers.Detector.postIndex()
 GET		/instruments  				controllers.Instrument.index()
-#POST	/instruments    			controllers.Instrument.postIndex()
+POST	/instruments    			controllers.Instrument.postIndex()
+GET		/entities    				controllers.Entity.index()
+POST	/entities       			controllers.Entity.postIndex()
 
 
 POST	/login						controllers.Application.login()

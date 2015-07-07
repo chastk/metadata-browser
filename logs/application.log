@@ -1,6 +1,279 @@
-2015-07-06 14:39:35,518 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-3 
+2015-07-07 10:14:02,054 - [INFO] - from play in play-fork-run-akka.actor.default-dispatcher-6 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-07-06 14:39:48,986 - [INFO] - from play in play-internal-execution-context-1 
+2015-07-07 10:14:22,645 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6mlam8hi0 - Internal server error, for (GET) [/instruments] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[`}' expected but eof found.]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:14:22,898 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-07-07 10:21:22,480 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-07-07 10:31:53,587 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-07-07 10:43:09,825 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6mlb02opi - Internal server error, for (GET) [/assets/stylesheets/bootstrap.min.css] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:10,852 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6mlb030dd - Internal server error, for (GET) [/assets/js/ie10-viewport-bug-workaround.js] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:11,978 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6mlb03245 - Internal server error, for (GET) [/assets/javascripts/bootstrap.min.js] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:13,154 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6mlb033nm - Internal server error, for (GET) [/assets/stylesheets/dashboard.css] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:14,275 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6mlb035f9 - Internal server error, for (GET) [/assets/images/favicon.png] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:15,319 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6mlb03734 - Internal server error, for (GET) [/assets/javascripts/bootstrap.min.js] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:16,505 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6mlb038n2 - Internal server error, for (GET) [/assets/js/ie10-viewport-bug-workaround.js] ->
+
+play.forkrun.protocol.Serializers$playExceptionPickler$$anon$1: Compilation error[class Entity is public, should be declared in a file named Entity.java]
+	at play.forkrun.protocol.Serializers$playExceptionPickler$.unpickle(Serializers.scala:161) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileFailureUnpickler$macro$50$2$.unpickle(Serializers.scala:178) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickle(Serializers.scala:184) ~[na:na]
+	at scala.pickling.Unpickler$class.unpickleEntry(Pickler.scala:79) ~[na:na]
+	at play.forkrun.protocol.Serializers$PlayRunsupportReloaderCompileResultUnpickler$macro$60$2$.unpickleEntry(Serializers.scala:184) ~[na:na]
+	at scala.pickling.functions$.unpickle(functions.scala:11) ~[na:na]
+	at sbt.serialization.JsonValue$$anonfun$parse$1.apply(SerializedValue.scala:104) ~[na:na]
+	at scala.util.Try$.apply(Try.scala:191) ~[scala-library-2.11.1.jar:na]
+	at sbt.serialization.JsonValue.parse(SerializedValue.scala:104) ~[na:na]
+	at sbt.protocol.BuildValue.value(Values.scala:11) ~[na:na]
+	at sbt.protocol.TaskSuccess.resultWithCustomThrowable(Values.scala:65) ~[na:na]
+	at sbt.protocol.TaskResult$class.result(Values.scala:56) ~[na:na]
+	at sbt.protocol.TaskSuccess.result(Values.scala:62) ~[na:na]
+	at play.forkrun.ForkRun$$anonfun$reloading$1.applyOrElse(ForkRun.scala:193) ~[na:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:465) ~[akka-actor_2.11-2.3.4.jar:na]
+	at play.forkrun.ForkRun.aroundReceive(ForkRun.scala:148) ~[na:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:487) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:221) ~[akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:231) ~[akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.pollAndExecAll(ForkJoinPool.java:1253) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1346) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.1.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.1.jar:na]
+
+2015-07-07 10:43:55,563 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
