@@ -5,7 +5,7 @@
 @import helper._
 @import play.api.libs.json._
 
-@main("Browse Detectors") {
+@main("Browse Entities") {
     <link rel="stylesheet" type="text/css" href='@routes.Assets.at("stylesheets/main.css")'>
     <div class="container-fluid">
       
@@ -13,38 +13,27 @@
         <div class="col-sm-9 col-md-10 main">
             <p>
                 <a class="btn btn-primary" href="/instruments">Instrument<br>Hierarchy</a>
-                <a class="btn btn-primary active" href="/detectors">Detector<br>Hierarchy</a>
-                <a class="btn btn-primary" href="/entities">Entity<br>Hierarchy</a>
+                <a class="btn btn-primary" href="/detectors">Detector<br>Hierarchy</a>
+                <a class="btn btn-primary active" href="/entities">Entity<br>Hierarchy</a>
                 <button class="btn btn-primary" type="submit">Characteristic<br>Hierarchy</button>
             </p>
+
+		<div class="row placeholders"></div>
             <ul class="nav nav-tabs">
-                <li><a data-toggle="tab" href="#DetectorModels">View All Detector Models</a></li>
-                <li><a data-toggle="tab" href="#Detectors">View All Detectors</a></li>
-                <li><a data-toggle="tab" href="#DetectorsH">View Models as Tree</a></li>
+                <li><a data-toggle="tab" href="#Entities">View All Entities</a></li>
+                <li><a data-toggle="tab" href="#EntitiesH">View Entities as Tree</a></li>
             </ul>
         <div class="row placeholders"></div>
         <div class = "tab-content">
         @for((thingType, query_results) <- documentMap) {
 		    @thingType match{
-                case "DetectorModels" => { 
-                    <div id="DetectorModels" class="tab-pane fade in">
+                case "Entities" => { 
+                    <div id="Entities" class="tab-pane fade in">
                         <div><p>(click for more information)</p></div>
                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
                                 @for(triple <- query_results.triples_list){
                                     @detector_model_entry(triple)
-                                }
-                            </div>
-                        </div>
-                    </div>
-                }
-                case "Detectors" => { 
-                    <div id="Detectors" class="tab-pane fade in">
-                        <div><p>(click for more information)</p></div>
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">                                    
-                                @for(triple <- query_results.triples_list){
-                                    @detector_entry(triple)
                                 }
                             </div>
                         </div>

@@ -8,6 +8,7 @@ import java.util.Iterator;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+// DEPRECIATED (?)
 public class TreeQuery {
 
 	//Get query using http.GetSparqlQuery

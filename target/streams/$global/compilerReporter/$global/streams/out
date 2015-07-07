@@ -1,10 +1,90 @@
-[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:21: illegal character '\u0001'[0m
-[0m[[31merror[0m] [0m		    @for((thingType, ) <- documentHierarchy) {[0m
-[0m[[31merror[0m] [0m		                     ^[0m
-[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:21: illegal character '\u0001'[0m
-[0m[[31merror[0m] [0m		    @for((thingType, ) <- documentHierarchy) {[0m
-[0m[[31merror[0m] [0m		                      ^[0m
-[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/views/hierarchy_faceting.scala.html:130: ')' expected but '}' found.[0m
+[0m[[31merror[0m] [0m/home/tetherless/metadata-browser/app/controllers/Characteristic.java:24: class Entity is public, should be declared in a file named Entity.java[0m
+[0m[[31merror[0m] [0mpublic class Entity extends Controller {[0m
+[0m[[31merror[0m] [0m    // for /metadata HTTP GET requests[0m
+[0m[[31merror[0m] [0m    public static Result index() {[0m
+[0m[[31merror[0m] [0m    	//Get query using http.GetSparqlQuery[0m
+[0m[[31merror[0m] [0m        SparqlQuery query = new SparqlQuery();[0m
+[0m[[31merror[0m] [0m        GetSparqlQuery query_submit = new GetSparqlQuery(query);[0m
+[0m[[31merror[0m] [0m        String[] tabsToQuery = {"Characteristics"}; [0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m        TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();[0m
+[0m[[31merror[0m] [0m        TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();[0m
+[0m[[31merror[0m] [0m        // This needs to be fixed to handle the tree rendering for Detectors![0m
+[0m[[31merror[0m] [0m        for (String tabName : query_submit.thingTypes){[0m
+[0m[[31merror[0m] [0m            String query_json = null;[0m
+[0m[[31merror[0m] [0m            if (tabName.endsWith("H")) {[0m
+[0m[[31merror[0m] [0m                System.out.println("Instrument.java is requesting: " + tabName);[0m
+[0m[[31merror[0m] [0m                try {[0m
+[0m[[31merror[0m] [0m                    query_json = query_submit.executeQuery(tabName);[0m
+[0m[[31merror[0m] [0m                } catch (IllegalStateException | IOException e1) {[0m
+[0m[[31merror[0m] [0m                    return notFound(error_page.render(e1.toString()));[0m
+[0m[[31merror[0m] [0m                    //e1.printStackTrace();[0m
+[0m[[31merror[0m] [0m                }[0m
+[0m[[31merror[0m] [0m                TreeQueryResults query_results = new TreeQueryResults(query_json, tabName);[0m
+[0m[[31merror[0m] [0m                hierarchy_results_list.put(tabName, query_results.getQueryResult().replace("\n", " "));[0m
+[0m[[31merror[0m] [0m            } else {[0m
+[0m[[31merror[0m] [0m                try {[0m
+[0m[[31merror[0m] [0m                    query_json = query_submit.executeQuery(tabName);[0m
+[0m[[31merror[0m] [0m                } catch (IllegalStateException | IOException e1) {[0m
+[0m[[31merror[0m] [0m                    return notFound(error_page.render(e1.toString()));[0m
+[0m[[31merror[0m] [0m                    //e1.printStackTrace();[0m
+[0m[[31merror[0m] [0m                }[0m
+[0m[[31merror[0m] [0m                //System.out.println(query_json);[0m
+[0m[[31merror[0m] [0m                SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);[0m
+[0m[[31merror[0m] [0m                query_results_list.put(tabName, query_results);[0m
+[0m[[31merror[0m] [0m            }// /else[0m
+[0m[[31merror[0m] [0m        }// /for tabName[0m
+[0m[[31merror[0m] [0m        [0m
+[0m[[31merror[0m] [0m        //Get the facets[0m
+[0m[[31merror[0m] [0m        //getFacets(jh);[0m
+[0m[[31merror[0m] [0m        System.out.println("Entity index() was called!");[0m
+[0m[[31merror[0m] [0m        return ok(entity_browser.render(query_results_list, hierarchy_results_list, "All Documents"));[0m
+[0m[[31merror[0m] [0m        [0m
+[0m[[31merror[0m] [0m    }// /index()[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m    // for /metadata HTTP POST requests[0m
+[0m[[31merror[0m] [0m    public static Result postIndex() {[0m
+[0m[[31merror[0m] [0m    	//Form<FacetFormData> formData = Form.form(FacetFormData.class).fill(facet_form);[0m
+[0m[[31merror[0m] [0m        JsonHandler jh = new JsonHandler();[0m
+[0m[[31merror[0m] [0m        //Get query using http.GetSparqlQuery[0m
+[0m[[31merror[0m] [0m        SparqlQuery query = new SparqlQuery();[0m
+[0m[[31merror[0m] [0m        GetSparqlQuery query_submit = new GetSparqlQuery(query);[0m
+[0m[[31merror[0m] [0m        String[] tabsToQuery = {"Characteristics"}; [0m
+[0m[[31merror[0m] [0m        // query_submit contains 7 queries: one for each thingType right now[0m
+[0m[[31merror[0m] [0m        TreeMap<String, SparqlQueryResults> query_results_list = new TreeMap<String, SparqlQueryResults>();[0m
+[0m[[31merror[0m] [0m        TreeMap<String, String> hierarchy_results_list = new TreeMap<String, String>();[0m
+[0m[[31merror[0m] [0m    	String final_query = null;[0m
+[0m[[31merror[0m] [0m        for (String tabName : query_submit.thingTypes){[0m
+[0m[[31merror[0m] [0m            String query_json = null;[0m
+[0m[[31merror[0m] [0m            if (tabName.endsWith("H")) {[0m
+[0m[[31merror[0m] [0m                System.out.println("Instrument.java is requesting: " + tabName);[0m
+[0m[[31merror[0m] [0m                try {[0m
+[0m[[31merror[0m] [0m                    query_json = query_submit.executeQuery(tabName);[0m
+[0m[[31merror[0m] [0m                } catch (IllegalStateException | IOException e1) {[0m
+[0m[[31merror[0m] [0m                    return notFound(error_page.render(e1.toString()));[0m
+[0m[[31merror[0m] [0m                    //e1.printStackTrace();[0m
+[0m[[31merror[0m] [0m                }[0m
+[0m[[31merror[0m] [0m                TreeQueryResults query_results = new TreeQueryResults(query_json, tabName);[0m
+[0m[[31merror[0m] [0m                hierarchy_results_list.put(tabName, query_results.getQueryResult().replace("\n", " "));[0m
+[0m[[31merror[0m] [0m            } else {[0m
+[0m[[31merror[0m] [0m                try {[0m
+[0m[[31merror[0m] [0m                    query_json = query_submit.executeQuery(tabName);[0m
+[0m[[31merror[0m] [0m                } catch (IllegalStateException | IOException e1) {[0m
+[0m[[31merror[0m] [0m                    return notFound(error_page.render(e1.toString()));[0m
+[0m[[31merror[0m] [0m                    //e1.printStackTrace();[0m
+[0m[[31merror[0m] [0m                }[0m
+[0m[[31merror[0m] [0m                //System.out.println(query_json);[0m
+[0m[[31merror[0m] [0m                SparqlQueryResults query_results = new SparqlQueryResults(query_json, tabName);[0m
+[0m[[31merror[0m] [0m                query_results_list.put(tabName, query_results);[0m
+[0m[[31merror[0m] [0m            }// /else[0m
+[0m[[31merror[0m] [0m        }// /for tabName[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m        //Get the facets[0m
+[0m[[31merror[0m] [0m        //getFacets(jh);[0m
+[0m[[31merror[0m] [0m        [0m
+[0m[[31merror[0m] [0m        System.out.println("Entity postIndex() was called!");[0m
+[0m[[31merror[0m] [0m        return ok(entity_browser.render(query_results_list, hierarchy_results_list, "All Documents"));[0m
+[0m[[31merror[0m] [0m    }// /postIndex()[0m
+[0m[[31merror[0m] [0m[0m
 [0m[[31merror[0m] [0m}[0m
-[0m[[31merror[0m] [0m ^[0m
-[0m[[31merror[0m] [0mthree errors found[0m

@@ -1,6 +1,6 @@
 // @SOURCE:/home/tetherless/metadata-browser/conf/routes
-// @HASH:0f8e3c23b1791dbb6233c1dc95f3ea2f3acf86ab
-// @DATE:Thu Jul 02 20:56:14 EDT 2015
+// @HASH:b4dab174a50b2e96363b8fb6026d35330129349c
+// @DATE:Mon Jul 06 15:22:17 EDT 2015
 
 
 import scala.language.reflectiveCalls
@@ -96,20 +96,41 @@ controllers.Instrument.index(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Instrument", "index", Nil,"GET", """""", Routes.prefix + """instruments"""))
         
 
-// @LINE:18
-private[this] lazy val controllers_Application_login9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("login"))))
-private[this] lazy val controllers_Application_login9_invoker = createInvoker(
+// @LINE:15
+private[this] lazy val controllers_Instrument_postIndex9_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("instruments"))))
+private[this] lazy val controllers_Instrument_postIndex9_invoker = createInvoker(
+controllers.Instrument.postIndex(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Instrument", "postIndex", Nil,"POST", """""", Routes.prefix + """instruments"""))
+        
+
+// @LINE:16
+private[this] lazy val controllers_Entity_index10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("entities"))))
+private[this] lazy val controllers_Entity_index10_invoker = createInvoker(
+controllers.Entity.index(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Entity", "index", Nil,"GET", """""", Routes.prefix + """entities"""))
+        
+
+// @LINE:17
+private[this] lazy val controllers_Entity_postIndex11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("entities"))))
+private[this] lazy val controllers_Entity_postIndex11_invoker = createInvoker(
+controllers.Entity.postIndex(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.Entity", "postIndex", Nil,"POST", """""", Routes.prefix + """entities"""))
+        
+
+// @LINE:20
+private[this] lazy val controllers_Application_login12_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("login"))))
+private[this] lazy val controllers_Application_login12_invoker = createInvoker(
 controllers.Application.login(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "login", Nil,"POST", """""", Routes.prefix + """login"""))
         
 
-// @LINE:21
-private[this] lazy val controllers_Assets_at10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at10_invoker = createInvoker(
+// @LINE:23
+private[this] lazy val controllers_Assets_at13_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at13_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix,"""controllers.Application.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """instruments""","""controllers.Instrument.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix,"""controllers.Application.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """spatial""","""controllers.Spatial.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """metadata""","""controllers.Hierarchy.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """detectors""","""controllers.Detector.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """instruments""","""controllers.Instrument.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """instruments""","""controllers.Instrument.postIndex()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """entities""","""controllers.Entity.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """entities""","""controllers.Entity.postIndex()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """login""","""controllers.Application.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -189,18 +210,42 @@ case controllers_Instrument_index8_route(params) => {
 }
         
 
-// @LINE:18
-case controllers_Application_login9_route(params) => {
+// @LINE:15
+case controllers_Instrument_postIndex9_route(params) => {
    call { 
-        controllers_Application_login9_invoker.call(controllers.Application.login())
+        controllers_Instrument_postIndex9_invoker.call(controllers.Instrument.postIndex())
    }
 }
         
 
-// @LINE:21
-case controllers_Assets_at10_route(params) => {
+// @LINE:16
+case controllers_Entity_index10_route(params) => {
+   call { 
+        controllers_Entity_index10_invoker.call(controllers.Entity.index())
+   }
+}
+        
+
+// @LINE:17
+case controllers_Entity_postIndex11_route(params) => {
+   call { 
+        controllers_Entity_postIndex11_invoker.call(controllers.Entity.postIndex())
+   }
+}
+        
+
+// @LINE:20
+case controllers_Application_login12_route(params) => {
+   call { 
+        controllers_Application_login12_invoker.call(controllers.Application.login())
+   }
+}
+        
+
+// @LINE:23
+case controllers_Assets_at13_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at10_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at13_invoker.call(controllers.Assets.at(path, file))
    }
 }
         
